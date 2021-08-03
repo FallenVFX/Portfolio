@@ -1,0 +1,134 @@
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.container {
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+    grid-area: 1 / 1 / 1 / -1;
+}
+
+h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 42px;
+    color: white;
+}
+
+.nav {
+    grid-area: 2 / 1 / 8 / 2;
+    font-family: Arial;
+    font-size: 20px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 20px;
+    max-height: 224px;
+    max-width: fit-content;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 25px;
+}
+
+.nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.nav li a.active {
+    color: rgb(195, 158, 255);
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 24px;
+}
+
+.home {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+main {
+    grid-area: 2 / 2 / 7 / -1;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+footer {
+    grid-area: 7 / 1 / -1 / -1;
+    padding-left: 50px;
+    font-family: monospace;
+    margin-top: 25px;
+    background-color: rgb(236, 236, 236);
+}
+
+.about {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    width: 20%;
+    min-width: 150px;
+    margin: 0;
+    height: 51%;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 600px;
+    margin-left: 10%;
+}
+
+.skills {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.skills li i {
+    font-size: 24px;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 32px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
+
+p {
+    font-size: 17px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 20px;
+}

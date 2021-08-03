@@ -3,43 +3,47 @@
     <head>
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
         <title>Personal Portfolio - Isaiah Leach</title>
     </head>
-    <body>
+    <body class="grid container">
         <header>
             <h1>Isaiah Leach</h1>
+        </header>
+        <aside class="nav">
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="" class="active home">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
+        </aside>
+        <main class="flex">
             <section class="about">
                 <h2>About Me</h2>
                 <p>
                     I'm Isaiah, I am new to web development, However I learn very fast and work
-                     diligently. I plan to continually learn more about programming, even 
-                     after finding a job in the field and even longer after that.
-                </p>
-                <p>
+                    diligently. I plan to continually learn more about programming 
+                    after finding a job in the field and even longer after that.
+                    <br><br>
                     I've always had an analytical mind and that has enabled me to constantly learn more about tech and the inner workings of both software and hardware. 
                     Since I was a kid I have been tearing apart computers and trying to fix circuit boards. My desire for learning has always pushed me to learn more and I don't plan on easing up anytime soon.
-                </p>
-                <p>
+                    <br><br>
                     Currently I work as a Tool Technician for The Home Depot, My skills and hard work have earned the respect of my supervisor and the freedom to lead the repair team within the Tool Rental department despite being a part time worker. 
                     I have no formal education in mechanics or repair, but a curious mind can learn a lot through less conventional means.
                 </p>
-                <aside>
-                    <img src="resources/images/">
-                </aside>
             </section>
+            <figure>
+                <img src="resources/images/Isaiah.jpg">
+            </figure>
             <section class="skills">
                 <h2>My Growing Skillset</h2>
                 <ul>
-                    <li>HTML</li>
+                    <li><i class="bx bxl-html5"></i>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
                     <li>Github</li>
@@ -48,7 +52,7 @@
                 </ul>
             </section>
         </main>
-        <footer>
+        <footer id="contact">
             <h3>Contact Me</h3>
             <p>Email: isaiahleach2709@gmail.com</p>
             <p>Phone: (425) 229 - 9117</p>
