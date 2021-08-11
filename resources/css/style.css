@@ -25,6 +25,7 @@ h1 {
     padding: 10px;
     font-size: 42px;
     color: white;
+    transition-duration: .25s;
 }
 
 .nav {
@@ -33,7 +34,7 @@ h1 {
     font-size: 20px;
     background-color: rgb(41, 41, 41);
     border-radius: 20px;
-    max-height: 224px;
+    height: min-content;
     max-width: fit-content;
 }
 
@@ -48,6 +49,7 @@ h1 {
     display: block;
     text-decoration: none;
     padding: 25px;
+    transition-duration: .25s;
 }
 
 .nav li a:hover {
@@ -56,7 +58,7 @@ h1 {
 
 .nav li a.active {
     color: rgb(195, 158, 255);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(187, 187, 187, 0.1);
     font-size: 24px;
 }
 
@@ -81,26 +83,23 @@ footer {
 }
 
 .about {
-    width: 60%;
-    margin: 0;
-    padding: 0;
+    width: 65%;
 }
 
 figure {
     width: 20%;
-    min-width: 150px;
-    margin: 0;
-    height: 51%;
+    min-width: 250px;
+    margin: 0 0 0 5%;
 }
 
 figure img {
     width: 100%;
     border-radius: 600px;
-    margin-left: 10%;
+    margin: 0;
 }
 
 .skills {
-    width: 60%;
+    width: 65%;
     margin: 0;
     padding: 0;
 }
@@ -131,4 +130,50 @@ p {
 
 h3 {
     font-size: 20px;
+}
+
+.bxs-right-arrow {
+    color: lightgray;
+    margin: 15px 50px 15px 10px;
+    font-size: 14px;
+    transition-duration: .25s;
+}
+
+.bxs-right-arrow:hover {
+    cursor: pointer;
+}
+
+span {
+    display: none;
+}
+
+@media only screen and (max-width: 960px) {
+    main {
+        grid-area: 1 / 2 / 7 / -1;
+        margin-top: 100px;
+    }
+
+    .nav {
+        grid-area: 1 / 1 / 8 / 2;
+        margin-top: 150px;
+    }
+
+    .about {
+        width: 95%;
+    }
+
+    figure {
+        padding: 0;
+        margin: 0;
+        width: 95%;
+    }
+
+    img {
+        max-width: 300px;
+        justify-self: center;
+    }
+
+    .skills {
+        width: 95%;
+    }
 }
