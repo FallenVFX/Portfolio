@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/projects.css">
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,25 +9,42 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
         <title>My Projects - Isaiah Leach</title>
     </head>
-    <body class="grid container">
+    <body>
         <header>
             <h1>My Projects</h1>
         </header>
-        <aside class="nav">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="" class="active">Projects</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main>
+        <nav id="nav">
             <ul>
-                <li>project1</li>
-                <li>project2</li>
-                <li>etc...</li>
+                <li><a href="index.html"><i class="bx bxs-home"></i> Home</a></li>
+                <li><a href="projects.html" class="active"><i class="bx bxs-folder"></i> Projects</a></li>
+                <li><a href="index.html#contact"><i class="bx bxs-contact"></i> Contact</a></li>
             </ul>
+        </nav>
+        <main class="grid">
+            <div class="proj1">
+                <h2>Minecraft Pixelmon Website</h2>
+                <figure class="flex">
+                    <img src="resources/images/pixelmon.png">
+                </figure>
+                <p>A website I made from scratch for me and my friends Minecraft Pixelmon server we are developing.</p>
+                <h3>View code here: <a href="">link</a></h3>
+            </div>
+            <div class="proj2">
+                <h2>Mysterious Organism</h2>
+                <figure class="flex">
+                    <img src="resources/images/MysOrg.png">
+                </figure>
+                <p>A javaScript made to simulate the fictional DNA of an organism in order to be studied.</p>
+                <h3>View code here: <a href="">link</a></h3>
+            </div>
+            <div class="proj3">
+                <h2>Number Guesser</h2>
+                <figure class="flex">
+                    <img src="resources/images/numGuess.png">
+                </figure>
+                <p>An interactable website that I made the scripts on, in order to make it a playable game.</p>
+                <h3>View code here: <a href="">link</a></h3>
+            </div>
         </main>
     </body>
 </html>

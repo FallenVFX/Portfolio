@@ -31,35 +31,39 @@ h1 {
 .nav {
     grid-area: 2 / 1 / 8 / 2;
     font-family: Arial;
-    font-size: 20px;
+    font-size: 18px;
     background-color: rgb(41, 41, 41);
     border-radius: 20px;
     height: min-content;
-    max-width: fit-content;
+    width: 75px;
+    transition-duration: .2s;
 }
 
 .nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    transition-duration: .2s;
 }
 
 .nav li a {
     color: white;
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    padding: 25px;
+    padding: 28px;
     transition-duration: .25s;
+    transition-property: display;
 }
 
 .nav li a:hover {
     background-color: rgba(255, 255, 255, 0.4);
+    transition-duration: .2s;
 }
 
 .nav li a.active {
     color: rgb(195, 158, 255);
     background-color: rgba(187, 187, 187, 0.1);
-    font-size: 24px;
+    transition-duration: .2s;
 }
 
 .home {
@@ -134,7 +138,8 @@ h3 {
 
 .bxs-right-arrow {
     color: lightgray;
-    margin: 15px 50px 15px 10px;
+    margin: 10px 45px 10px 5px;
+    padding: 5px;
     font-size: 14px;
     transition-duration: .25s;
 }
@@ -177,3 +182,4 @@ span {
         width: 95%;
     }
 }
+
