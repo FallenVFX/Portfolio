@@ -11,23 +11,85 @@
     </head>
     <body>
         <header>
-            <h1>Portfolio</h1>
+            <h1>Portfolio Projects</h1>
             <nav>
                 <ul class="nav">
                     <li><a href="index.html"><i class="bx bxs-home"></i><span>Home</span></a></li>
                     <li><a href="#" class="active"><i class="bx bxs-folder"></i><span>Projects</span></a></li>
-                    <li><a href="#contact"><i class="bx bxs-contact"></i><span>Contact</span></a></li>
+                    <li><a href="index.html#contact"><i class="bx bxs-contact"></i><span>Contact</span></a></li>
                 </ul>
             </nav>
         </header>
         <main class="grid">
             <div class="proj1">
-                <p class="warning">This Page is a work in progress.</p>
-                <h2>Minecraft Pixelmon Website</h2>
-                <figure class="flex">
-                    <img src="resources/images/pixelmon.png">
-                </figure>
-                <p>A website I made from scratch for me and my friends Minecraft Pixelmon server we are developing.</p>
+                <h2>Calculator</h2>
+                <div class="calc">
+                    <p id="output">0</p>
+                    <table class="buttons">
+                        <tr>
+                            <td colspan="2">
+                                <button class="button" id="clearAll">C</button>
+                            </td>
+                            <td>
+                                <button class="button" id="divide">/</button>
+                            </td>
+                            <td>
+                                <button class="button" id="multiply">*</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="button" id="in7">7</button>
+                            </td>
+                            <td>
+                                <button class="button" id="in8">8</button>
+                            </td>
+                            <td>
+                                <button class="button" id="in9">9</button>
+                            </td>
+                            <td>
+                                <button class="button" id="subtract">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="button" id="in4">4</button>
+                            </td>
+                            <td>
+                                <button class="button" id="in5">5</button>
+                            </td>
+                            <td>
+                                <button class="button" id="in6">6</button>
+                            </td>
+                            <td>
+                                <button class="button" id="add">+</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="button" id="in1">1</button>
+                            </td>
+                            <td>
+                                <button class="button" id="in2">2</button>
+                            </td>
+                            <td>
+                                <button class="button" id="in3">3</button>
+                            </td>
+                            <td rowspan="2">
+                                <button class="button" id="equals">=</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button class="button" id="in0">0</button>
+                            </td>
+                            <td>
+                                <button class="button" id="inDecimal">.</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Functional calculator using JavaScript.</p>
                 <h3>View code here: <a href="">link</a></h3>
             </div>
             <div class="proj2">
@@ -47,5 +109,6 @@
                 <h3>View code here: <a href="">link</a></h3>
             </div>
         </main>
+        <script src="resources/javascript/calculator.js"></script>
     </body>
 </html>
