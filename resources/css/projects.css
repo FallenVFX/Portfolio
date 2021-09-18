@@ -204,7 +204,7 @@ img {
 
 /* ---- Responsive CSS ---- */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
     .nav span {
         display: none;
     }
