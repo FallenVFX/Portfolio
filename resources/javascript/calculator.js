@@ -22,6 +22,7 @@ const dot = document.getElementById('inDecimal');
 const maxDigits = 18;
 // this is to get rid of the default 0 in the output.
 let clicked = false;
+let awaitEquals;
 
 // variables for total input
 let input1 = '';
@@ -70,6 +71,7 @@ divide.addEventListener('click', () => {
     }
     output.innerHTML = '/';
     clicked = false;
+    awaitEquals = true;
     funcType = '/';
 });
 
@@ -79,6 +81,7 @@ multiply.addEventListener('click', () => {
     } else {
         input1 = output.innerHTML;
     }
+    awaitEquals = true;
     output.innerHTML = '*';
     clicked = false;
     funcType = '*';
@@ -90,6 +93,7 @@ subtract.addEventListener('click', () => {
     } else {
         input1 = output.innerHTML;
     }
+    awaitEquals = true;
     output.innerHTML = '-';
     clicked = false;
     funcType = '-';
@@ -101,17 +105,23 @@ add.addEventListener('click', () => {
     } else {
         input1 = output.innerHTML;
     }
+    awaitEquals = true;
     output.innerHTML = '+';
     clicked = false;
     funcType = '+';
 });
 
 equals.addEventListener('click', () => {
-    input2 = output.innerHTML;
-    clicked = false;
-    output.innerHTML = equate(input1, input2, funcType);
-    input1 = '';
-    input2 = '';
+    console.log(`${input1} ${input2}`);
+    if (awaitEquals) {
+        input2 = output.innerHTML;
+    }
+    if (input1 && input2) {
+        output.innerHTML = equate(input1, input2, funcType);
+        clicked = false;
+    }
+    awaitEquals = false;
+    input1 = output.innerHTML;
 });
 
 
