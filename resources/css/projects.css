@@ -1,4 +1,19 @@
 /* ---- global styles ---- */
+html {
+    background-color: #eee;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin: 150px 200px 50px 200px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
 
 header {
     grid-area: 1 / 1 / 1 / -1;
@@ -14,6 +29,20 @@ header {
     height: 100px;
 }
 
+main {
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.apis {
+    grid-area: 1 / 1 / 2 / -1;
+}
+
+.websites {
+    grid-area: 2 / 1 / 4 / -1;
+    margin-bottom: 50px;
+}
+
 h1 {
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
@@ -24,17 +53,48 @@ h1 {
     color: white;
 }
 
+h2 {
+    font-size: 32px;
+    background-color: #355168;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px 5px 15px;
+}
+
+h3 {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 17px;
+    padding: 10px;
+}
+
+hr {
+    margin: 70px 50px;
+}
+
+figure {
+    background-color: rgba(0, 0, 0, 0.068);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 70%;
+    float: none;
+    border-radius: 20px;
+}
+
+
+/* ---- Navigation Styles ---- */
+
 nav {
     width: fit-content;
     text-align: right;
     margin-right: 10px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    margin: 150px 200px 50px 200px;
 }
 
 .nav li {
@@ -64,66 +124,6 @@ nav {
     padding: 5px;
 }
 
-h2 {
-    font-size: 32px;
-    background-color: #355168;
-    border-radius: 10px;
-    color: white;
-    padding: 5px 5px 5px 15px;
-}
-
-p {
-    font-size: 17px;
-    padding: 10px;
-}
-
-h3 {
-    font-size: 20px;
-    padding-left: 10px;
-}
-
-main {
-    padding: 10px;
-    font-family: "Roboto", sans-serif;
-}
-
-.apis {
-    grid-area: 1 / 1 / 2 / -1;
-}
-
-.websites {
-    grid-area: 2 / 1 / 4 / -1;
-    margin-bottom: 50px;
-}
-
-hr {
-    margin: 70px 50px;
-}
-
-figure {
-    background-color: rgba(0, 0, 0, 0.068);
-    padding: 5px;
-    border-radius: 20px;
-}
-
-img {
-    max-width: 100%;
-    max-height: 70%;
-    float: none;
-    border-radius: 20px;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-}
-
-.warning {
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 5px 5px 40px;
-    margin: 0;
-}
 /* ---- Calculator Styles ---- */
 
 .calc {
@@ -204,21 +204,19 @@ img {
 
 /* ---- Responsive CSS ---- */
 
-@media screen and (max-width: 1200px) {
-    .nav span {
-        display: none;
-    }
-
-    .nav i {
-        font-size: 60px;
+@media screen and (max-width: 1024px) {
+    /* Global */
+    .grid {
+        margin: 100px 0px;
     }
 
     header h1 {
         font-size: 50px;
         margin: 0;
-        padding: 0 0 0 10px;
+        padding: 0 0 0 40px;
     }
 
+    /* Nav */
     nav {
         margin: 0;
         padding: 0;
@@ -230,28 +228,38 @@ img {
     }
 
     .nav a {
-        padding: 15px;
+        padding: 45px 15px 15px 15px;
     }
 
-    .grid {
-        margin: 100px 0px;
+    .nav i {
+        font-size: 60px;
     }
+
+    .nav span {
+        display: none;
+    }
+
+    /* Calculator */
 
     .calc {
-        margin: auto;
+        margin: 100px auto;
+        transform: scale(1.2);
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 980px) {
+    /* Global */
+    .grid {
+        margin-top: 150px;
+    }
+
     header {
         height: 140px;
     }
 
+    /* Nav */
+
     nav {
         width: 450px;
-    }
-
-    .grid {
-        margin-top: 150px;
     }
 }

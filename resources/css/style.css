@@ -1,7 +1,7 @@
 /* ---- global styles ---- */
 
-body {
-    background-color: #D5D5D5;
+html {
+    background-color: #eeeeee;
 }
 
 .grid {
@@ -12,11 +12,6 @@ body {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-}
-
-.container {
-    grid-template-rows: 150px repeat(6, 1fr);
-    grid-template-columns: repeat(12, 1fr);
 }
 
 header {
@@ -43,6 +38,46 @@ h1 {
     color: white;
 }
 
+h2 {
+    font-size: 32px;
+    background-color: #355168;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px 5px 15px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 17px;
+    padding: 10px;
+}
+
+main {
+    grid-area: 2 / 2 / 7 / -1;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    grid-template-rows: 150px repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+footer {
+    grid-area: 7 / 1 / -1 / -1;
+    padding-left: 50px;
+    font-family: monospace;
+    margin-top: 25px;
+    background-color: #2C6899;
+    position: relative;
+    color: white;
+}
+
+/* Navigation Styles */
+
 nav {
     width: fit-content;
     text-align: right;
@@ -61,6 +96,10 @@ nav {
     padding: 10px 15px;
 }
 
+.nav i {
+    padding: 5px;
+}
+
 .nav a:hover {
     background-color: rgba(40, 40, 40, .3);
     border-radius: 5px;
@@ -72,26 +111,7 @@ nav {
     color: #2480cc;
 }
 
-.nav i {
-    padding: 5px;
-}
-
-
-main {
-    grid-area: 2 / 2 / 7 / -1;
-    padding: 10px;
-    font-family: "Roboto", sans-serif;
-}
-
-footer {
-    grid-area: 7 / 1 / -1 / -1;
-    padding-left: 50px;
-    font-family: monospace;
-    margin-top: 25px;
-    background-color: #2C6899;
-    position: relative;
-    color: white;
-}
+/* About Section */
 
 .about {
     width: 65%;
@@ -109,11 +129,12 @@ figure img {
     margin: 0;
 }
 
+/* Skills Section */
+
 .skills {
     width: 65%;
     margin: 0;
     padding: 0;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px auto;
 }
@@ -122,11 +143,6 @@ figure img {
     list-style-type: none;
     padding: 0;
     margin: 10px;
-    
-}
-
-.skills h2 {
-    grid-area: 1 / 1 / 2 / 3;
 }
 
 .skills li i {
@@ -134,64 +150,38 @@ figure img {
     padding: 5px;
 }
 
-h2 {
-    font-size: 32px;
-    background-color: #355168;
-    border-radius: 10px;
-    color: white;
-    padding: 5px 5px 5px 15px;
+hr {
+    width: 95%;
+    border: 1px solid rgb(202, 202, 202);
+    margin: 15px auto;
 }
 
-p {
-    font-size: 17px;
-    padding: 10px;
-}
+/* Responsive CSS */
+@media only screen and (max-width: 1024px) {
 
-h3 {
-    font-size: 20px;
-}
+    /* Global */
+    h1 {
+        font-size: 50px;
+        margin: 0;
+        padding: 0 0 0 40px;
+    }
 
-
-@media only screen and (max-width: 1100px) {
     main {
         grid-area: 1 / 1 / 7 / -1;
         margin-top: 100px;
         justify-items: center;
     }
 
-    .about {
-        width: 100%;
+    #contact {
+        height: fit-content;
     }
 
-    figure {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        text-align: center;
+    #contact h3, 
+    #contact p {
+        font-size: 36px;
     }
 
-    img {
-        max-width: 300px;
-    }
-
-    .skills {
-        width: 100%;
-    }
-
-    .nav span {
-        display: none;
-    }
-
-    .nav i {
-        font-size: 60px;
-    }
-
-    h1 {
-        font-size: 50px;
-        margin: 0;
-        padding: 0 0 0 10px;
-    }
-
+    /* Nav */
     nav {
         margin: 0;
         padding: 0;
@@ -203,11 +193,54 @@ h3 {
     }
 
     .nav a {
-        padding: 15px;
+        padding: 45px 15px 15px 15px;
+        height: 100px;
     }
+
+    .nav i {
+        font-size: 60px;
+    }
+
+    .nav span {
+        display: none;
+    }
+
+    /* About */
+    .about {
+        width: 100%;
+    }
+
+    .about p {
+        width: 90%;
+    }
+
+    figure {
+        padding: 0;
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        max-width: 600px;
+    }
+
+    /* Skills */
+    .skills {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .skills li i {
+        padding-right: 35px;
+    }    
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 980px) {
+    .grid {
+        margin-top: 50px;
+    }
+
     header {
         height: 140px;
     }
@@ -215,9 +248,4 @@ h3 {
     nav {
         width: 450px;
     }
-
-    .grid {
-        margin-top: 50px;
-    }
 }
-
