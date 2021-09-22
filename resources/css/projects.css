@@ -71,6 +71,14 @@ p {
     padding: 10px;
 }
 
+main a {
+    color: rgb(33, 54, 105);
+}
+
+main a:hover {
+    color: rgb(61, 92, 170);
+}
+
 hr {
     margin: 70px 50px;
 }
