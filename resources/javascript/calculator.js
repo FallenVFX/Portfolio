@@ -65,7 +65,8 @@ clear.addEventListener('click', () => {
 
 divide.addEventListener('click', () => {
     if (input1 !== '' && input2 !== '') {
-        input1 = equate(input1, input2, funcType);
+        input1 = output.innerHTML;
+        input2 = '';
     } else {
         input1 = output.innerHTML;
     }
@@ -77,7 +78,8 @@ divide.addEventListener('click', () => {
 
 multiply.addEventListener('click', () => {
     if (input1 !== '' && input2 !== '') {
-        input1 = equate(input1, input2, funcType);
+        input1 = output.innerHTML;
+        input2 = '';
     } else {
         input1 = output.innerHTML;
     }
@@ -89,7 +91,8 @@ multiply.addEventListener('click', () => {
 
 subtract.addEventListener('click', () => {
     if (input1 !== '' && input2 !== '') {
-        input1 = equate(input1, input2, funcType);
+        input1 = output.innerHTML;
+        input2 = '';
     } else {
         input1 = output.innerHTML;
     }
@@ -101,7 +104,8 @@ subtract.addEventListener('click', () => {
 
 add.addEventListener('click', () => {
     if (input1 !== '' && input2 !== '') {
-        input1 = equate(input1, input2, funcType);
+        input1 = output.innerHTML;
+        input2 = '';
     } else {
         input1 = output.innerHTML;
     }
@@ -122,6 +126,7 @@ equals.addEventListener('click', () => {
     }
     awaitEquals = false;
     input1 = output.innerHTML;
+    input2 = '';
 });
 
 
