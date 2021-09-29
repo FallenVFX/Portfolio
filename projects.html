@@ -1,119 +1,168 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="resources/css/projects.css">
-        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
-        <title>My Projects - Isaiah Leach</title>
-    </head>
-    <body>
-        <header>
-            <h1>Portfolio Projects</h1>
-            <nav>
-                <ul class="nav">
-                    <li><a href="index.html"><i class="bx bxs-home"></i><span>Home</span></a></li>
-                    <li><a href="#" class="active"><i class="bx bxs-folder"></i><span>Projects</span></a></li>
-                    <li><a href="index.html#contact"><i class="bx bxs-contact"></i><span>Contact</span></a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="grid">
-            <div class="apis">
-            <div></div>
-                <h2>Calculator</h2>
-                <div class="calc">
-                    <p id="output">0</p>
-                    <table class="buttons">
-                        <tr>
-                            <td colspan="2">
-                                <button class="button" id="clearAll">C</button>
-                            </td>
-                            <td>
-                                <button class="button" id="divide">/</button>
-                            </td>
-                            <td>
-                                <button class="button" id="multiply">*</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button class="button" id="in7">7</button>
-                            </td>
-                            <td>
-                                <button class="button" id="in8">8</button>
-                            </td>
-                            <td>
-                                <button class="button" id="in9">9</button>
-                            </td>
-                            <td>
-                                <button class="button" id="subtract">-</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button class="button" id="in4">4</button>
-                            </td>
-                            <td>
-                                <button class="button" id="in5">5</button>
-                            </td>
-                            <td>
-                                <button class="button" id="in6">6</button>
-                            </td>
-                            <td>
-                                <button class="button" id="add">+</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button class="button" id="in1">1</button>
-                            </td>
-                            <td>
-                                <button class="button" id="in2">2</button>
-                            </td>
-                            <td>
-                                <button class="button" id="in3">3</button>
-                            </td>
-                            <td rowspan="2">
-                                <button class="button" id="equals">=</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <button class="button" id="in0">0</button>
-                            </td>
-                            <td>
-                                <button class="button" id="inDecimal">.</button>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <p>Functional calculator using JavaScript.</p>
-                <h3>View code here: <a href="https://github.com/IsaiahPetrichor/Portfolio/blob/main/resources/javascript/calculator.js" target="_blank">Github</a></h3>
-            </div>
-            <div class="websites">
-                <div>
-                    <hr>
-                    <h2>Jammming</h2>
-                    <figure class="flex">
-                        <img src="resources/images/jammming.png">
-                    </figure>
-                    <p>React App made to access the Spotify API to search for songs and add them to a playlist on your account.</p>
-                    <h3>View live site here: <a href="https://loving-einstein-17e668.netlify.app/" target="_blank">Netlify</a></h3>
-                </div>
-                <div>
-                    <hr>
-                    <h2>Minecraft Server Website</h2>
-                    <figure class="flex">
-                        <img src="resources/images/pixelmon.png">
-                    </figure>
-                    <p>Website made for a clan of gamers that runs a modded Minecraft server.</p>
-                    <h3>View code here: <a href="https://github.com/IsaiahPetrichor/Portfolio/tree/main/resources/projects/PixelmonWebsite" target="_blank">Github</a></h3>
-                </div>
-            </div>
-        </main>
-        <script src="resources/javascript/calculator.js"></script>
-    </body>
+	<head>
+		<link rel="icon" href="/resources/images/logo.png" />
+		<link rel="stylesheet" type="text/css" href="resources/css/projects.css" />
+		<link
+			href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>My Projects - Isaiah Leach</title>
+	</head>
+	<body>
+		<header>
+			<h1>Portfolio Projects</h1>
+			<nav>
+				<ul class="nav">
+					<li>
+						<a href="index.html"
+							><i class="bx bxs-home"></i><span>Home</span></a
+						>
+					</li>
+					<li>
+						<a href="#" class="active"
+							><i class="bx bxs-folder"></i><span>Projects</span></a
+						>
+					</li>
+					<li>
+						<a href="index.html#contact"
+							><i class="bx bxs-contact"></i><span>Contact</span></a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="grid">
+			<div class="apis">
+				<div></div>
+				<h2>Calculator</h2>
+				<div class="calc">
+					<p id="output">0</p>
+					<table class="buttons">
+						<tr>
+							<td colspan="2">
+								<button class="button" id="clearAll">C</button>
+							</td>
+							<td>
+								<button class="button" id="divide">/</button>
+							</td>
+							<td>
+								<button class="button" id="multiply">*</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button class="button" id="in7">7</button>
+							</td>
+							<td>
+								<button class="button" id="in8">8</button>
+							</td>
+							<td>
+								<button class="button" id="in9">9</button>
+							</td>
+							<td>
+								<button class="button" id="subtract">-</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button class="button" id="in4">4</button>
+							</td>
+							<td>
+								<button class="button" id="in5">5</button>
+							</td>
+							<td>
+								<button class="button" id="in6">6</button>
+							</td>
+							<td>
+								<button class="button" id="add">+</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button class="button" id="in1">1</button>
+							</td>
+							<td>
+								<button class="button" id="in2">2</button>
+							</td>
+							<td>
+								<button class="button" id="in3">3</button>
+							</td>
+							<td rowspan="2">
+								<button class="button" id="equals">=</button>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<button class="button" id="in0">0</button>
+							</td>
+							<td>
+								<button class="button" id="inDecimal">.</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<p>Functional calculator using JavaScript.</p>
+				<h3>
+					View code here:
+					<a
+						href="https://github.com/IsaiahPetrichor/Portfolio/blob/main/resources/javascript/calculator.js"
+						target="_blank"
+						>Github</a
+					>
+				</h3>
+			</div>
+			<div class="websites">
+				<div>
+					<hr />
+					<h2>Jammming</h2>
+					<figure class="flex">
+						<img src="resources/images/jammming.png" />
+					</figure>
+					<p>
+						React App made to access the Spotify API to search for songs and add
+						them to a playlist on your account.
+					</p>
+					<h3>
+						View live site here:
+						<a
+							href="https://loving-einstein-17e668.netlify.app/"
+							target="_blank"
+							>Netlify</a
+						>
+					</h3>
+				</div>
+				<div>
+					<hr />
+					<h2>Minecraft Server Website</h2>
+					<figure class="flex">
+						<img src="resources/images/pixelmon.png" />
+					</figure>
+					<p>
+						Website made for a clan of gamers that runs a modded Minecraft
+						server.
+					</p>
+					<h3>
+						View code here:
+						<a
+							href="https://github.com/IsaiahPetrichor/Portfolio/tree/main/resources/projects/PixelmonWebsite"
+							target="_blank"
+							>Github</a
+						>
+					</h3>
+				</div>
+			</div>
+		</main>
+		<script src="resources/javascript/calculator.js"></script>
+	</body>
 </html>
