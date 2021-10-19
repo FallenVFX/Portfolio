@@ -9,10 +9,6 @@ html {
 	background-color: #eeeeee;
 }
 
-.grid {
-	display: grid;
-}
-
 .flex {
 	display: flex;
 	justify-content: flex-start;
@@ -20,7 +16,7 @@ html {
 }
 
 header {
-	grid-area: 1 / 1 / 1 / -1;
+	grid-row: 1;
 	position: absolute;
 	display: inline-flex;
 	justify-content: space-between;
@@ -55,30 +51,24 @@ h3 {
 	font-size: 20px;
 }
 
-p {
-	font-size: 17px;
-	padding: 30px 15px;
+.hero {
 }
 
 main {
-	grid-area: 2 / 2 / 7 / -1;
-	padding: 10px;
+	width: 100%;
+	padding: 10px 10px 10px 150px;
 	font-family: 'Roboto', sans-serif;
 }
 
-.container {
-	grid-template-rows: 150px repeat(5, 1fr) auto;
-	grid-template-columns: repeat(12, 1fr);
-}
-
 footer {
-	grid-area: 7 / 1 / -1 / -1;
+	width: 100%;
 	padding-left: 50px;
 	font-family: monospace;
 	margin-top: 25px;
 	padding-top: 20px;
 	background-color: #355168;
 	position: relative;
+	top: 100%;
 	color: white;
 }
 
@@ -120,7 +110,13 @@ nav {
 /* About Section */
 
 .about {
+	width: 90%;
+}
+
+.about p {
 	width: 65%;
+	font-size: 17px;
+	padding: 30px 15px;
 }
 
 figure {
@@ -139,7 +135,7 @@ figure img {
 /* Skills Section */
 
 .skills {
-	width: 65%;
+	width: 90%;
 	margin: 0;
 	padding: 0;
 	grid-template-columns: repeat(2, 1fr);

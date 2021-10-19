@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>My Projects - Isaiah Leach</title>
+		<!-- Custom Styles -->
 		<link rel="icon" href="/resources/images/logo.png" />
 		<link rel="stylesheet" type="text/css" href="resources/css/projects.css" />
+		<!-- Box Icons -->
 		<link
 			href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
 			rel="stylesheet"
 		/>
+		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -17,7 +21,6 @@
 			href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap"
 			rel="stylesheet"
 		/>
-		<title>My Projects - Isaiah Leach</title>
 	</head>
 	<body>
 		<header>
@@ -43,10 +46,43 @@
 			</nav>
 		</header>
 		<main class="grid">
+			<div class="highlights" id="carousel">
+				<h2>Highlighted Projects</h2>
+				<img src="resources/images/Isaiah.jpg" />
+				<img src="resources/images/IsaiahAlt.jpg" />
+				<img src="resources/images/MysOrg.png" />
+				<img src="resources/images/pixelmon.png" />
+			</div>
+			<div class="react">
+				<h2 class="section-title">React Projects</h2>
+				<hr />
+				<div>
+					<h3>Jammming</h3>
+					<figure class="flex">
+						<img src="resources/images/jammming.png" />
+					</figure>
+					<p>
+						React App made to access the Spotify API to search for songs and add
+						them to a playlist on your account.
+					</p>
+					<h4>
+						View live site here:
+						<a
+							href="https://loving-einstein-17e668.netlify.app/"
+							target="_blank"
+							>Netlify</a
+						>
+					</h4>
+				</div>
+			</div>
 			<div class="apis">
-				<div></div>
-				<h2>Calculator</h2>
+				<h2 class="section-title">API Implementation</h2>
+			</div>
+			<div class="javascript">
+				<h2 class="section-title">JavaScript Projects</h2>
+				<hr />
 				<div class="calc">
+					<h3>Calculator</h3>
 					<p id="output">0</p>
 					<table class="buttons">
 						<tr>
@@ -111,40 +147,22 @@
 							</td>
 						</tr>
 					</table>
+					<p>Functional calculator using JavaScript.</p>
+					<h4>
+						View code here:
+						<a
+							href="https://github.com/IsaiahPetrichor/Portfolio/blob/main/resources/javascript/calculator.js"
+							target="_blank"
+							>Github</a
+						>
+					</h4>
 				</div>
-				<p>Functional calculator using JavaScript.</p>
-				<h3>
-					View code here:
-					<a
-						href="https://github.com/IsaiahPetrichor/Portfolio/blob/main/resources/javascript/calculator.js"
-						target="_blank"
-						>Github</a
-					>
-				</h3>
 			</div>
 			<div class="websites">
+				<h2 class="section-title">HTML & CSS Projects</h2>
+				<hr />
 				<div>
-					<hr />
-					<h2>Jammming</h2>
-					<figure class="flex">
-						<img src="resources/images/jammming.png" />
-					</figure>
-					<p>
-						React App made to access the Spotify API to search for songs and add
-						them to a playlist on your account.
-					</p>
-					<h3>
-						View live site here:
-						<a
-							href="https://loving-einstein-17e668.netlify.app/"
-							target="_blank"
-							>Netlify</a
-						>
-					</h3>
-				</div>
-				<div>
-					<hr />
-					<h2>Minecraft Server Website</h2>
+					<h3>Minecraft Server Website</h3>
 					<figure class="flex">
 						<img src="resources/images/pixelmon.png" />
 					</figure>
@@ -152,17 +170,18 @@
 						Website made for a clan of gamers that runs a modded Minecraft
 						server.
 					</p>
-					<h3>
+					<h4>
 						View code here:
 						<a
 							href="https://github.com/IsaiahPetrichor/Portfolio/tree/main/resources/projects/PixelmonWebsite"
 							target="_blank"
 							>Github</a
 						>
-					</h3>
+					</h4>
 				</div>
 			</div>
 		</main>
 		<script src="resources/javascript/calculator.js"></script>
+		<script src="resources/javascript/script.js"></script>
 	</body>
 </html>
