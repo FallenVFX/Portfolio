@@ -145,7 +145,7 @@ main div {
 	grid-area: 2 / 1 / 3 / -1;
 }
 
-.apis {
+.shopify {
 	grid-area: 3 / 1 / 4 / -1;
 }
 
@@ -159,12 +159,37 @@ main div {
 
 /* ---- Carousel Styles ---- */
 #carousel {
-	height: 1500px;
+	height: fit-content;
+}
+
+#carousel figure {
+	display: none;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	text-align: left;
+	height: fit-content;
+	width: 100%;
+	overflow: hidden;
+	align-items: center;
+	margin: 5px;
+	padding: 0;
 }
 
 #carousel img {
-	display: none;
+	max-height: 900px;
+	margin: auto;
+	grid-area: 1 / 1 / -1 / -1;
+}
+
+#carousel figcaption {
+	font-size: 1.5em;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.7);
+	grid-area: 6 / 1 / -1 / -1;
+	margin: 0px;
+	padding: 10px;
 	width: 100%;
+	height: 100%;
 }
 
 /* ---- Calculator Styles ---- */
