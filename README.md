@@ -1,5 +1,4 @@
 # Portfolio
-My Personal Portfolio
+###My Personal Portfolio
 
-Welcome to my first Web Development portfolio. I am new to programming at this level, though I have some experience in the past.
-I look forward to continuing to learn and become part of the Web Dev community!
+Welcome to my Web Development portfolio. I am a Front-End Engineer and Shopify Developer. I will continue to update this portfolio as I grow as a web developer
