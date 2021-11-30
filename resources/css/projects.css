@@ -6,7 +6,13 @@
 }
 
 html {
-	background-color: #eee;
+	background: url('../images/mountainRange.jpg') rgba(0, 0, 0, 0.2);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-blend-mode: multiply;
+	background-position: center;
+	color: white;
 }
 
 .grid {
@@ -21,30 +27,37 @@ html {
 }
 
 header {
-	position: absolute;
+	position: fixed;
 	display: inline-flex;
+	z-index: 10;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0;
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: #2c6899;
-	height: 100px;
+	background-color: #355168cc;
+	height: 80px;
 }
 
 main {
-	padding: 10px;
-	margin: 150px 200px 50px 200px;
+	margin-top: 100px;
+	width: 100%;
 	font-family: 'Roboto', sans-serif;
 }
 
-main a {
-	color: rgb(33, 54, 105);
-}
-
-main a:hover {
-	color: rgb(61, 92, 170);
+main section {
+	background-color: #0e161caa;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: center;
+	align-items: center;
+	margin: auto;
+	margin-bottom: 40px;
+	width: 80%;
+	height: fit-content;
 }
 
 h1 {
@@ -53,21 +66,45 @@ h1 {
 	padding: 10px 20px;
 	width: fit-content;
 	text-align: left;
-	font-size: 42px;
+	font-size: 36px;
 	color: white;
 }
 
-h2 {
+.section-title {
 	font-size: 32px;
-	background-color: #355168;
-	border-radius: 10px;
+	background-color: #6295bfcc;
 	color: white;
 	padding: 5px 5px 5px 15px;
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	text-align: left;
+	outline: none;
+	border: none;
+	font-weight: bold;
+}
+
+.section-title i {
+	float: right;
+	margin-right: 10px;
+	vertical-align: -3px;
+	transition: transform 250ms ease-in-out;
+}
+
+.section-title:hover,
+.active {
+	cursor: pointer;
+	background-color: #355168cc;
+}
+
+.content {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 250ms ease-in-out;
 }
 
 h3 {
 	font-size: 24px;
-	padding-left: 10px;
 }
 
 h4 {
@@ -80,62 +117,55 @@ p {
 	padding: 10px;
 }
 
-hr {
-	margin: 70px 50px;
-}
-
-figure {
-	background-color: rgba(0, 0, 0, 0.068);
-	padding: 5px;
-	border-radius: 20px;
-}
-
 img {
-	max-width: 100%;
-	max-height: 70%;
-	float: none;
-	border-radius: 20px;
+	width: 1060px;
+	height: 600px;
+	border-radius: 0px;
 }
 
 /* ---- Navigation Styles ---- */
 
 nav {
-	width: fit-content;
 	text-align: right;
 	margin-right: 10px;
 }
 
-.nav li {
-	display: inline;
+nav ul {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
 }
 
-.nav a {
-	font-size: 24px;
+nav li {
+	list-style-type: none;
+}
+
+nav i {
+	margin-right: 5px;
+	vertical-align: -2px;
+}
+
+nav a {
+	padding: 15px;
 	color: white;
 	text-decoration: none;
+	font-size: 24px;
 	font-family: Arial, Helvetica, sans-serif;
-	padding: 10px 15px;
 }
 
-.nav a:hover {
-	background-color: rgba(40, 40, 40, 0.3);
+nav a:hover {
+	background-color: #0e161c77;
 	border-radius: 5px;
 	transition: 0.2s ease-in;
 }
 
-.nav a:active {
+nav a:active {
 	background-color: rgba(20, 20, 20, 0.5);
 	color: #2480cc;
 }
 
-.nav i {
-	padding: 5px;
-}
-
 /* ---- Section Styles ---- */
-main div {
-	margin: 50px 0px;
-}
 
 .highlights {
 	grid-area: 1 / 1 / 2 / -1;
@@ -171,12 +201,12 @@ main div {
 	width: 100%;
 	overflow: hidden;
 	align-items: center;
-	margin: 5px;
+	margin: 0;
 	padding: 0;
 }
 
 #carousel img {
-	max-height: 900px;
+	max-height: 600px;
 	margin: auto;
 	grid-area: 1 / 1 / -1 / -1;
 }
@@ -184,7 +214,6 @@ main div {
 #carousel figcaption {
 	font-size: 1.5em;
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.7);
 	grid-area: 6 / 1 / -1 / -1;
 	margin: 0px;
 	padding: 10px;
@@ -202,6 +231,7 @@ main div {
 	height: fit-content;
 	padding: 10px;
 	border: 1px solid darkgray;
+	color: black;
 }
 
 #output {
@@ -273,15 +303,8 @@ main div {
 /* ---- Responsive CSS ---- */
 
 @media screen and (max-width: 1024px) {
-	/* Global */
-	.grid {
-		margin: 100px 0px;
-	}
-
-	header h1 {
-		font-size: 50px;
-		margin: 0;
-		padding: 0 0 0 40px;
+	header {
+		height: fit-content;
 	}
 
 	/* Nav */
@@ -290,44 +313,20 @@ main div {
 		padding: 0;
 	}
 
-	.nav {
+	nav {
 		padding: 0;
 		margin: 0;
 	}
 
-	.nav a {
+	nav a {
 		padding: 45px 15px 15px 15px;
 	}
 
-	.nav i {
+	nav i {
 		font-size: 60px;
 	}
 
-	.nav span {
+	nav span {
 		display: none;
-	}
-
-	/* Calculator */
-
-	.calc {
-		margin: 100px auto;
-		transform: scale(1.2);
-	}
-}
-
-@media screen and (max-width: 980px) {
-	/* Global */
-	.grid {
-		margin-top: 150px;
-	}
-
-	header {
-		height: 140px;
-	}
-
-	/* Nav */
-
-	nav {
-		width: 450px;
 	}
 }

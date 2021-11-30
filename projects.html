@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Portfolio projects page of Isaiah Leach-Petrichor, Front-End Engineer & Shopify Developer"
+		/>
 		<title>My Projects - Isaiah Leach</title>
 		<!-- Custom Styles -->
 		<link rel="icon" href="/resources/images/logo.png" />
-		<link rel="stylesheet" type="text/css" href="resources/css/projects.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="resources/css/projects.css"
+			defer
+		/>
 		<!-- Box Icons -->
 		<link
 			href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
 			rel="stylesheet"
+			defer
 		/>
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,24 +27,26 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
 			rel="stylesheet"
+			defer
 		/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap"
 			rel="stylesheet"
+			defer
 		/>
 	</head>
 	<body>
 		<header>
 			<h1>Portfolio Projects</h1>
 			<nav>
-				<ul class="nav">
+				<ul>
 					<li>
 						<a href="index.html"
 							><i class="bx bxs-home"></i><span>Home</span></a
 						>
 					</li>
 					<li>
-						<a href="projects.html" class="active"
+						<a href="projects.html"
 							><i class="bx bxs-folder"></i><span>Projects</span></a
 						>
 					</li>
@@ -46,158 +59,191 @@
 			</nav>
 		</header>
 		<main class="grid">
-			<div class="highlights" id="carousel">
-				<h2>Highlighted Projects</h2>
-				<figure>
-					<img
-						src="resources/images/highlights/mountains.jpg"
-						style="display: grid"
-					/>
-					<figcaption>This is a test</figcaption>
-				</figure>
-				<figure>
-					<img src="resources/images/highlights/lava.jpg" />
-					<figcaption>This is a test</figcaption>
-				</figure>
-				<figure>
-					<img src="resources/images/highlights/water.jpg" />
-					<figcaption>This is a test</figcaption>
-				</figure>
-			</div>
-			<div class="react">
-				<h2 class="section-title">React Projects</h2>
-				<hr />
-				<div>
-					<h3>Jammming</h3>
-					<figure class="flex">
-						<img src="resources/images/projects/react/jammming.png" />
+			<section class="highlights">
+				<h2 class="section-title active">
+					Highlighted Projects
+					<i class="bx bxs-chevron-right" style="transform: rotate(90deg)"></i>
+				</h2>
+				<div class="content" id="carousel" style="max-height: fit-content">
+					<figure style="display: grid">
+						<img
+							src="resources/images/highlights/mountains.jpg"
+							alt="mountain picture placeholder"
+						/>
+						<figcaption>This is a test</figcaption>
 					</figure>
-					<p>
-						React App made to access the Spotify API to search for songs and add
-						them to a playlist on your account.
-					</p>
-					<h4>
-						View live site here:
-						<a
-							href="https://loving-einstein-17e668.netlify.app/"
-							target="_blank"
-							>Netlify</a
-						>
-					</h4>
-				</div>
-			</div>
-			<div class="shopify">
-				<h2 class="section-title">Shopify e-Commerce</h2>
-			</div>
-			<div class="javascript">
-				<h2 class="section-title">JavaScript Projects</h2>
-				<hr />
-				<div class="calc">
-					<h3>Calculator</h3>
-					<p id="output">0</p>
-					<table class="buttons">
-						<tr>
-							<td colspan="2">
-								<button class="button" id="clearAll">C</button>
-							</td>
-							<td>
-								<button class="button" id="divide">/</button>
-							</td>
-							<td>
-								<button class="button" id="multiply">*</button>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<button class="button" id="in7">7</button>
-							</td>
-							<td>
-								<button class="button" id="in8">8</button>
-							</td>
-							<td>
-								<button class="button" id="in9">9</button>
-							</td>
-							<td>
-								<button class="button" id="subtract">-</button>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<button class="button" id="in4">4</button>
-							</td>
-							<td>
-								<button class="button" id="in5">5</button>
-							</td>
-							<td>
-								<button class="button" id="in6">6</button>
-							</td>
-							<td>
-								<button class="button" id="add">+</button>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<button class="button" id="in1">1</button>
-							</td>
-							<td>
-								<button class="button" id="in2">2</button>
-							</td>
-							<td>
-								<button class="button" id="in3">3</button>
-							</td>
-							<td rowspan="2">
-								<button class="button" id="equals">=</button>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<button class="button" id="in0">0</button>
-							</td>
-							<td>
-								<button class="button" id="inDecimal">.</button>
-							</td>
-						</tr>
-					</table>
-					<p>Functional calculator using JavaScript.</p>
-					<h4>
-						View code here:
-						<a
-							href="https://github.com/IsaiahPetrichor/Portfolio/blob/main/resources/javascript/calculator.js"
-							target="_blank"
-							>Github</a
-						>
-					</h4>
-				</div>
-				<div class="roman"></div>
-				<div class="palindrome"></div>
-				<div class="telephone"></div>
-				<div class="caesars"></div>
-				<div class="register"></div>
-			</div>
-			<div class="websites">
-				<h2 class="section-title">HTML & CSS Projects</h2>
-				<hr />
-				<div>
-					<h3>Minecraft Server Website</h3>
-					<figure class="flex">
-						<img src="resources/images/projects/html/pixelmon.png" />
+					<figure>
+						<img
+							src="resources/images/highlights/lava.jpg"
+							alt="lava picture placeholder"
+						/>
+						<figcaption>This is a test</figcaption>
 					</figure>
-					<p>
-						Website made for a clan of gamers that runs a modded Minecraft
-						server.
-					</p>
-					<h4>
-						View code here:
-						<a
-							href="https://github.com/IsaiahPetrichor/Portfolio/tree/main/resources/projects/PixelmonWebsite"
-							target="_blank"
-							>Github</a
-						>
-					</h4>
+					<figure>
+						<img
+							src="resources/images/highlights/water.jpg"
+							alt="water picture placeholder"
+						/>
+						<figcaption>This is a test</figcaption>
+					</figure>
 				</div>
-			</div>
+			</section>
+			<section class="react">
+				<h2 class="section-title">
+					React Projects<i class="bx bxs-chevron-right"></i>
+				</h2>
+				<div class="content">
+					<div>
+						<h3>Jammming</h3>
+						<figure class="flex">
+							<img
+								src="resources/images/projects/react/jammming.png"
+								alt="Jamming picture placeholder"
+							/>
+						</figure>
+						<p>
+							React App made to access the Spotify API to search for songs and
+							add them to a playlist on your account.
+						</p>
+						<h4>
+							View live site here:
+							<a
+								href="https://loving-einstein-17e668.netlify.app/"
+								rel="noopener"
+								target="_blank"
+								>Netlify</a
+							>
+						</h4>
+					</div>
+				</div>
+			</section>
+			<section class="shopify">
+				<h2 class="section-title">
+					Shopify e-Commerce<i class="bx bxs-chevron-right"></i>
+				</h2>
+				<div class="content"></div>
+			</section>
+			<section class="javascript">
+				<h2 class="section-title">
+					JavaScript Projects<i class="bx bxs-chevron-right"></i>
+				</h2>
+				<div class="content">
+					<div class="calc">
+						<h3>Calculator</h3>
+						<p id="output">0</p>
+						<table class="buttons">
+							<tr>
+								<td colspan="2">
+									<button class="button" id="clearAll">C</button>
+								</td>
+								<td>
+									<button class="button" id="divide">/</button>
+								</td>
+								<td>
+									<button class="button" id="multiply">*</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button class="button" id="in7">7</button>
+								</td>
+								<td>
+									<button class="button" id="in8">8</button>
+								</td>
+								<td>
+									<button class="button" id="in9">9</button>
+								</td>
+								<td>
+									<button class="button" id="subtract">-</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button class="button" id="in4">4</button>
+								</td>
+								<td>
+									<button class="button" id="in5">5</button>
+								</td>
+								<td>
+									<button class="button" id="in6">6</button>
+								</td>
+								<td>
+									<button class="button" id="add">+</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button class="button" id="in1">1</button>
+								</td>
+								<td>
+									<button class="button" id="in2">2</button>
+								</td>
+								<td>
+									<button class="button" id="in3">3</button>
+								</td>
+								<td rowspan="2">
+									<button class="button" id="equals">=</button>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button class="button" id="in0">0</button>
+								</td>
+								<td>
+									<button class="button" id="inDecimal">.</button>
+								</td>
+							</tr>
+						</table>
+						<p>Functional calculator using JavaScript.</p>
+						<h4>
+							View code here:
+							<a
+								href="https://github.com/IsaiahPetrichor/Portfolio/blob/main/resources/javascript/calculator.js"
+								rel="noopener"
+								target="_blank"
+								>Github</a
+							>
+						</h4>
+					</div>
+					<div class="roman"></div>
+					<div class="palindrome"></div>
+					<div class="telephone"></div>
+					<div class="caesars"></div>
+					<div class="register"></div>
+				</div>
+			</section>
+			<section class="websites">
+				<h2 class="section-title">
+					HTML & CSS Projects<i class="bx bxs-chevron-right"></i>
+				</h2>
+				<div class="content">
+					<div>
+						<h3>Minecraft Server Website</h3>
+						<figure class="flex">
+							<img
+								src="resources/images/projects/html/pixelmon.png"
+								alt="Pixelmon picture placeholder"
+							/>
+						</figure>
+						<p>
+							Website made for a clan of gamers that runs a modded Minecraft
+							server.
+						</p>
+						<h4>
+							View code here:
+							<a
+								href="https://github.com/IsaiahPetrichor/Portfolio/tree/main/resources/projects/PixelmonWebsite"
+								rel="noopener"
+								target="_blank"
+								>Github</a
+							>
+						</h4>
+					</div>
+				</div>
+			</section>
 		</main>
+		<script src="resources/javascript/projects.js"></script>
 		<script src="resources/javascript/carousel.js"></script>
-		<script src="resources/javascript/calculator.js"></script>
+		<script src="resources/projects/jsProjects/calculator.js"></script>
 	</body>
 </html>
