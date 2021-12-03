@@ -167,6 +167,23 @@ nav a:active {
 
 /* ---- Section Styles ---- */
 
+.content a {
+	color: #9fd4ff;
+	text-transform: uppercase;
+	font-family: 'Roboto' Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.javascript .content a {
+	color: rgb(24, 24, 24);
+}
+
+.content a:hover {
+	color: rgb(122, 122, 122);
+	background-color: rgba(37, 37, 37, 0.4);
+	border-radius: 5px;
+}
+
 .highlights {
 	grid-area: 1 / 1 / 2 / -1;
 }
@@ -214,7 +231,9 @@ nav a:active {
 #carousel figcaption {
 	font-size: 1.5em;
 	color: #fff;
+	background-color: #0e161caa;
 	grid-area: 6 / 1 / -1 / -1;
+	font-family: 'Roboto' sans-serif;
 	margin: 0px;
 	padding: 10px;
 	width: 100%;
