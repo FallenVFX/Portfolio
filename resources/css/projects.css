@@ -183,14 +183,6 @@ nav a:active {
 	font-family: 'Roboto' Arial, Helvetica, sans-serif;
 }
 
-.javascript .content h3 {
-	background-color: transparent;
-}
-
-.javascript .content a {
-	color: rgb(24, 24, 24);
-}
-
 .content a:hover {
 	color: rgb(122, 122, 122);
 	background-color: rgba(37, 37, 37, 0.4);
@@ -280,6 +272,14 @@ nav a:active {
 	padding: 10px;
 	border: 1px solid darkgray;
 	color: black;
+}
+
+.calc h3 {
+	background-color: transparent !important;
+}
+
+.calc a {
+	color: rgb(24, 24, 24);
 }
 
 #output {
