@@ -14,5 +14,6 @@ Welcome to my Web Development portfolio. I am a Front-End Engineer and Shopify D
 - React app called Jammming where you can add songs to a playlist and save it to your Spotify Account.
 - HTML & CSS page for a Minecraft server
 - JavaScript Calculator W/ GUI
+- many more, to be listed
 
-Check back often to see new projects.
+Check back often to see new / updated projects.
