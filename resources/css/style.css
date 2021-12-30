@@ -288,24 +288,51 @@ hr {
 }
 
 /* Responsive CSS */
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 800px) {
+	/* Global Styles */
+	html,
+	body {
+		width: 100vw;
+	}
+
+	/* Header Styles */
+
 	header {
-		height: min-content;
+		height: fit-content;
+		width: 100vw;
+	}
+
+	h1 {
+		font-size: 1.6rem;
+		padding: 5px;
 	}
 
 	/* Nav */
 
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 	nav a {
-		padding: 15px 20px;
-		font-size: 35px;
-		margin-right: 20px;
+		padding: 11px 13px;
+		font-size: 1.6rem;
+		margin: 0;
 	}
 
 	nav i {
-		vertical-align: -2px;
+		margin: 0;
 	}
 
 	nav span {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.profile {
+		width: 250px !important;
+		height: 250px !important;
 	}
 }
