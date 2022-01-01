@@ -33,3 +33,5 @@ Welcome to my Web Development portfolio. I am a Front-End Engineer, studying to 
   - HTML & CSS page for a Minecraft server
 
 Check back often to see new / updated projects.
+
+### View live deployment here: https://isaiahpetrichor.github.io/Portfolio/
