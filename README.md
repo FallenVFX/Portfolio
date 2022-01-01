@@ -28,6 +28,7 @@ Welcome to my Web Development portfolio. I am a Front-End Engineer, studying to 
 
 - **HTML & CSS**
 
+  - Autumn Procurement and Services LLC, landing page and services page for a recent client
   - Fotomatic, landing page for a fictional camera company
   - Website Design System, basic style guide (outdated)
   - HTML & CSS page for a Minecraft server
