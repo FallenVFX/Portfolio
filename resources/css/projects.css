@@ -349,6 +349,12 @@ nav a:active {
 }
 
 /* Responsive CSS */
+@media only screen and (max-width: 1350px) {
+	img {
+		width: 860px;
+		height: 480px;
+	}
+}
 
 @media only screen and (max-width: 1100px) {
 	/* Global Styles */
