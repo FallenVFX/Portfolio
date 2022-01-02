@@ -107,11 +107,6 @@ h3 {
 	font-size: 24px;
 }
 
-h4 {
-	font-size: 20px;
-	padding-left: 10px;
-}
-
 p {
 	font-size: 17px;
 	padding: 10px;
@@ -121,6 +116,12 @@ img {
 	width: 1060px;
 	height: 600px;
 	border-radius: 0px;
+}
+
+.link {
+	font-size: 20px;
+	padding-left: 10px;
+	font-weight: 700;
 }
 
 /* ---- Navigation Styles ---- */
@@ -245,17 +246,17 @@ nav a:active {
 	height: 100%;
 }
 
-.highlights h4 {
+.highlights .link {
 	margin-top: 5px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.highlights h4 a {
+.highlights .link a {
 	color: #9fd4ff;
 	text-decoration: none;
 }
 
-.highlights h4 a:hover {
+.highlights .link a:hover {
 	color: rgb(122, 122, 122);
 	background-color: rgba(37, 37, 37, 0.4);
 	border-radius: 5px;
