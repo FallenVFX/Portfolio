@@ -1,0 +1,23 @@
+{
+	"name": "portfolio-website",
+	"version": "1.0.0",
+	"description": "Isaiah Petrichor, Personal Portfolio",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "node TDD/test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IsaiahPetrichor/Portfolio.git"
+	},
+	"author": "Isaiah Petrichor",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/IsaiahPetrichor/Portfolio/issues"
+	},
+	"homepage": "https://github.com/IsaiahPetrichor/Portfolio#readme",
+	"devDependencies": {
+		"chai": "^4.3.6"
+	}
+}
