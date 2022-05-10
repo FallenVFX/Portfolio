@@ -68,6 +68,7 @@ main section {
 	margin-bottom: 40px;
 	width: 80%;
 	height: fit-content;
+	max-width: 1400px;
 }
 
 .section-title {
