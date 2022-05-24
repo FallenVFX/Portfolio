@@ -317,6 +317,33 @@ hr {
 	font-size: 1.2rem;
 }
 
+/* Certifications Styles */
+
+.certifications {
+	width: 95%;
+	max-width: 1400px;
+	margin: 30px auto;
+	padding-top: 50px;
+}
+
+.section-title {
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.course-cert,
+.individual-cert {
+	margin-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.certification {
+	height: 500px;
+	margin: 10px auto;
+	border-radius: 3px;
+}
 /* Responsive CSS */
 
 @media only screen and (max-width: 800px) {
