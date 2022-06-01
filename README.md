@@ -1,6 +1,6 @@
 # Portfolio
 
-Welcome to my Web Development portfolio. I am a Front-End Engineer, studying to become a Full-Stack Developer and Game Developer. I will continue to update this portfolio as I grow as a developer.
+Welcome to my Web Development portfolio. I am a Full-Stack Engineer, always striving to learn more and build better projects. I will continue to update this portfolio as I grow as a developer.
 
 ## Technologies Used
 
