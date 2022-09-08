@@ -8,6 +8,12 @@ Welcome to my Web Development portfolio. I am a Full-Stack Engineer, always stri
 - CSS
 - JavaScript
 
+### View live deployment here: [https://isaiahpetrichor.github.io/portfolio/]
+
+## Quick Start Guide
+
+Running this project locally is simple. Clone the directory, open it in VSCode and launch it using the Live Server extension.
+
 ## Projects Featured
 
 ---
@@ -34,5 +40,3 @@ Welcome to my Web Development portfolio. I am a Full-Stack Engineer, always stri
   - HTML & CSS page for a Minecraft server
 
 Check back often to see new / updated projects.
-
-### View live deployment here: https://isaiahpetrichor.github.io/Portfolio/
