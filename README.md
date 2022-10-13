@@ -36,7 +36,6 @@ Running this project locally is simple. Clone the directory, open it in VSCode a
 
   - Autumn Procurement and Services LLC, landing page and services page for a recent client
   - Fotomatic, landing page for a fictional camera company
-  - Website Design System, basic style guide (outdated)
   - HTML & CSS page for a Minecraft server
 
 Check back often to see new / updated projects.
