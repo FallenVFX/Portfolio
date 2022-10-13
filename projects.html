@@ -1,457 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <meta name="author" content="Isaiah Leach" />
-    <meta
-      name="description"
-      content="Portfolio projects page of Isaiah Leach-Petrichor, Front-End Engineer & Shopify Developer"
-    />
-    <title>My Projects | Isaiah Petrichor</title>
-    <meta
-      name="keywords"
-      content="Portfolio, HTML, CSS, JavaScript, Isaiah, Petrichor, Leach, Projects"
-    />
-    <!-- Preview meta data -->
-    <meta
-      property="og:url"
-      content="https://isaiahpetrichor.github.io/Portfolio/"
-    />
-    <meta property="og:type" content="Website" />
-    <meta
-      property="og:title"
-      content="Isaiah Leach (Petrichor) Personal Portfolio"
-    />
-    <meta
-      property="og:description"
-      content="Personal Portfolio page of Isaiah Leach/Petrichor, Full Stack Engineer"
-    />
-    <meta
-      property="og:image"
-      content="https://isaiahpetrichor.github.io/Portfolio/resources/images/personal/IsaiahAlt.png"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="resources/images/personal/favicon.ico?v=2"
-    />
-    <title>My Projects | Isaiah Petrichor</title>
-    <!-- Custom Styles -->
-    <link rel="icon" href="/resources/images/personal/logo.avif" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="resources/css/projects.css"
-      defer
-    />
-    <!-- Box Icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-      rel="stylesheet"
-      defer
-    />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-      defer
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap"
-      rel="stylesheet"
-      defer
-    />
-  </head>
-  <body>
-    <header>
-      <h1>Portfolio Projects</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html"
-              ><i class="bx bxs-home"></i><span>Home</span></a
-            >
-          </li>
-          <li>
-            <a href="projects.html"
-              ><i class="bx bxs-folder"></i><span>Projects</span></a
-            >
-          </li>
-          <li>
-            <a href="certifications.html"
-              ><i class="bx bxs-book-bookmark"></i
-              ><span>Certifications</span></a
-            >
-          </li>
-          <li>
-            <a href="index.html#contact"
-              ><i class="bx bxs-contact"></i><span>Contact</span></a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="grid">
-      <section class="highlights">
-        <h2 class="section-title active">
-          Highlighted Projects
-          <i class="bx bxs-chevron-right" style="transform: rotate(90deg)"></i>
-        </h2>
-        <div class="content" id="carousel" style="max-height: fit-content">
-          <figure style="display: grid">
-            <img
-              src="resources/images/highlights/coffee-home.avif"
-              alt="petrichor coffee home page"
-            />
-            <figcaption>
-              Petrichor Coffee - A fully functional eCommerce PERN application
-              for a fictional coffee shop
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src="resources/images/highlights/coffee-login.avif"
-              alt="petrichor coffee login page"
-            />
-            <figcaption>
-              Petrichor Coffee - Login page using bcrypt and JSON Web Tokens for
-              a secure and easy to use system
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src="resources/images/highlights/coffee-profile.avif"
-              alt="petrichor coffee profile page"
-            />
-            <figcaption>
-              Petrichor Coffee - Profile page where payments, addresses, orders,
-              and user details can be viewed and edited
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src="resources/images/highlights/coffee-admin.avif"
-              alt="petrichor coffee admin page"
-            />
-            <figcaption>
-              Petrichor Coffee - Admin page only capable of being viewed by
-              users with admin rights. allows access to edit products,
-              categories, and even delete users
-            </figcaption>
-          </figure>
-        </div>
-        <p class="link">
-          Source code for all projects can be found on
-          <a
-            href="https://github.com/IsaiahPetrichor"
-            rel="noopener"
-            target="_blank"
-            >my GitHub</a
-          >
-        </p>
-      </section>
-      <section class="react">
-        <h2 class="section-title">
-          React Projects<i class="bx bxs-chevron-right"></i>
-        </h2>
-        <div class="content">
-          <div>
-            <h3>Petrichor Coffee Professionals</h3>
-            <figure class="flex">
-              <img
-                src="resources/images/highlights/coffee-home.avif"
-                alt="petrichor coffee home page"
-              />
-            </figure>
-            <p>
-              Petrichor Coffee - A fully functional eCommerce PERN application
-              for a fictional coffee shop, a fast SPA built with React Router
-              and a custom back-end.
-            </p>
-            <p class="link">
-              <a
-                href="https://petrichor-coffee.herokuapp.com/"
-                rel="noopener"
-                target="_blank"
-                >View live on Heroku</a
-              >
-            </p>
-          </div>
-          <hr />
-          <div>
-            <h3>Employee Scheduler</h3>
-            <figure class="flex">
-              <img
-                src="resources/images/projects/react/scheduler.avif"
-                alt="Employee Scheduler react application"
-              />
-            </figure>
-            <p>
-              React CRUD application for managing employees and their schedules
-            </p>
-            <p class="link">
-              <a
-                href="https://petrichor-scheduler.netlify.app/"
-                rel="noopener"
-                target="_blank"
-                >View live site on Netlify</a
-              >
-            </p>
-          </div>
-          <hr />
-          <div>
-            <h3>Appointment Planner</h3>
-            <figure class="flex">
-              <img
-                src="resources/images/projects/react/planner.avif"
-                alt="appointment planner react application"
-              />
-            </figure>
-            <p>React application for adding contacts and appointments</p>
-            <p class="link">
-              <a
-                href="https://petrichor-planner.netlify.app/"
-                rel="noopener"
-                target="_blank"
-                >View live site on Netlify</a
-              >
-            </p>
-          </div>
-          <hr />
-          <div>
-            <h3>Flashcards</h3>
-            <figure class="flex">
-              <img
-                src="resources/images/projects/react/flashcards.avif"
-                alt="flashcards react application"
-              />
-            </figure>
-            <p>React app to create topics and quizzes for existing topics</p>
-            <p class="link">
-              <a
-                href="https://petrichor-flashcards.netlify.app/"
-                rel="noopener"
-                target="_blank"
-                >View live site on Netlify</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="javascript">
-        <h2 class="section-title">
-          JavaScript Projects<i class="bx bxs-chevron-right"></i>
-        </h2>
-        <div class="content">
-          <div class="calc">
-            <h3>Calculator</h3>
-            <p id="output">0</p>
-            <table class="buttons">
-              <tr>
-                <td colspan="2">
-                  <button class="button" id="clearAll">C</button>
-                </td>
-                <td>
-                  <button class="button" id="divide">/</button>
-                </td>
-                <td>
-                  <button class="button" id="multiply">*</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button class="button" id="in7">7</button>
-                </td>
-                <td>
-                  <button class="button" id="in8">8</button>
-                </td>
-                <td>
-                  <button class="button" id="in9">9</button>
-                </td>
-                <td>
-                  <button class="button" id="subtract">-</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button class="button" id="in4">4</button>
-                </td>
-                <td>
-                  <button class="button" id="in5">5</button>
-                </td>
-                <td>
-                  <button class="button" id="in6">6</button>
-                </td>
-                <td>
-                  <button class="button" id="add">+</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button class="button" id="in1">1</button>
-                </td>
-                <td>
-                  <button class="button" id="in2">2</button>
-                </td>
-                <td>
-                  <button class="button" id="in3">3</button>
-                </td>
-                <td rowspan="2">
-                  <button class="button" id="equals">=</button>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <button class="button" id="in0">0</button>
-                </td>
-                <td>
-                  <button class="button" id="inDecimal">.</button>
-                </td>
-              </tr>
-            </table>
-            <p>Functional calculator using JavaScript.</p>
-            <p class="link">
-              <a
-                href="https://github.com/IsaiahPetrichor/Portfolio/blob/main/resources/projects/JS/calculator.js"
-                rel="noopener"
-                target="_blank"
-                >View code on Github</a
-              >
-            </p>
-          </div>
-          <hr />
-          <div>
-            <h3>Quote API</h3>
-            <figure class="flex">
-              <img
-                src="resources/images/projects/javascript/quote-api.avif"
-                alt="quote API website"
-              />
-            </figure>
-            <p>
-              Simple API that serves up random quotes along with their authors.
-            </p>
-            <p class="link">
-              <a
-                href="https://github.com/IsaiahPetrichor/quoteApi"
-                rel="noopener"
-                target="_blank"
-                >View code on Github</a
-              >
-            </p>
-          </div>
-          <hr />
-          <div>
-            <h3>Find Your Hat</h3>
-            <figure class="flex">
-              <img
-                src="resources/images/projects/javascript/find-hat.avif"
-                alt="find your hat console game"
-              />
-            </figure>
-            <p>
-              Maze-like console game, your character must find their hat to win!
-            </p>
-            <p class="link">
-              <a
-                href="https://github.com/IsaiahPetrichor/find-your-hat"
-                rel="noopener"
-                target="_blank"
-                >View code on Github</a
-              >
-            </p>
-          </div>
-          <hr />
-          <div>
-            <h3>Mysterious Organism</h3>
-            <figure class="flex">
-              <img
-                src="resources/images/projects/javascript/mysterious-organism.avif"
-                alt="mysterious organism DNA analysis simulation"
-              />
-            </figure>
-            <p>
-              Javascript console app, creating a random DNA strand and returning
-              an analysis
-            </p>
-            <p class="link">
-              <a
-                href="https://github.com/IsaiahPetrichor/mystery-organism"
-                rel="noopener"
-                target="_blank"
-                >View code on Github</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="websites">
-        <h2 class="section-title">
-          HTML & CSS Projects<i class="bx bxs-chevron-right"></i>
-        </h2>
-        <div class="content">
-          <div>
-            <h3>Autumn Procurement and Services LLC</h3>
-            <figure class="flex">
-              <img
-                src="resources/images/projects/html/aarin.avif"
-                alt="landing page for Autumn P&S LLC"
-              />
-            </figure>
-            <p>Landing page I made for Autum Procurement and Services LLC</p>
-            <p class="link">
-              <a
-                href="http://www.autumnpsllc.com/"
-                rel="noopener"
-                target="_blank"
-                >View live site here</a
-              >
-            </p>
-          </div>
-          <hr />
-          <div>
-            <h3>Fotomatic</h3>
-            <figure class="flex">
-              <img
-                src="resources/images/projects/html/fotomatic.avif"
-                alt="fotomatic landing page"
-              />
-            </figure>
-            <p>Landing page for a fictional camera company</p>
-            <p class="link">
-              <a
-                href="https://isaiahpetrichor.github.io/fotomatic/"
-                rel="noopener"
-                target="_blank"
-                >View live on GitHub Pages</a
-              >
-            </p>
-          </div>
-          <hr />
-          <div>
-            <h3>Minecraft Server Website</h3>
-            <figure class="flex">
-              <img
-                src="resources/images/projects/html/pixelmon.avif"
-                alt="Pixelmon website home page"
-              />
-            </figure>
-            <p>
-              Website made for a clan of gamers that run a modded Minecraft
-              server.
-            </p>
-            <p class="link">
-              <a href="#">Code temporarily unavailable</a>
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="resources/javascript/projects.js"></script>
-    <script src="resources/javascript/carousel.js"></script>
-    <script src="resources/projects/JS/calculator.js"></script>
-  </body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="author" content="Isaiah Leach" />
+        <meta
+            name="description"
+            content="Portfolio projects page of Isaiah Leach-Petrichor, Front-End Engineer & Shopify Developer"
+        />
+        <title>My Projects | Isaiah Petrichor</title>
+        <meta
+            name="keywords"
+            content="Portfolio, HTML, CSS, JavaScript, Isaiah, Petrichor, Leach, Projects"
+        />
+        <!-- Preview meta data -->
+        <meta
+            property="og:url"
+            content="https://isaiahpetrichor.github.io/Portfolio/"
+        />
+        <meta property="og:type" content="Website" />
+        <meta
+            property="og:title"
+            content="Isaiah Leach (Petrichor) Personal Portfolio"
+        />
+        <meta
+            property="og:description"
+            content="Personal Portfolio page of Isaiah Leach/Petrichor, Full Stack Engineer"
+        />
+        <meta
+            property="og:image"
+            content="https://isaiahpetrichor.github.io/Portfolio/resources/images/personal/IsaiahAlt.png"
+        />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="resources/images/personal/favicon.ico?v=2"
+        />
+        <title>My Projects | Isaiah Petrichor</title>
+        <!-- Custom Styles -->
+        <link rel="icon" href="/resources/images/personal/logo.avif" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="resources/css/projects.css"
+            defer
+        />
+        <!-- Box Icons -->
+        <link
+            href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+            rel="stylesheet"
+            defer
+        />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+            defer
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap"
+            rel="stylesheet"
+            defer
+        />
+    </head>
+    <body>
+        <header>
+            <h1>Portfolio Projects</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html"
+                            ><i class="bx bxs-home"></i><span>Home</span></a
+                        >
+                    </li>
+                    <li>
+                        <a href="projects.html"
+                            ><i class="bx bxs-folder"></i
+                            ><span>Projects</span></a
+                        >
+                    </li>
+                    <li>
+                        <a href="certifications.html"
+                            ><i class="bx bxs-book-bookmark"></i
+                            ><span>Certifications</span></a
+                        >
+                    </li>
+                    <li>
+                        <a href="index.html#contact"
+                            ><i class="bx bxs-contact"></i
+                            ><span>Contact</span></a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="grid">
+            <section class="highlights">
+                <h2 class="section-title active">
+                    Highlighted Project
+                    <i
+                        class="bx bxs-chevron-right"
+                        style="transform: rotate(90deg)"
+                    ></i>
+                </h2>
+                <div
+                    class="content"
+                    id="carousel"
+                    style="max-height: fit-content"
+                >
+                    <figure style="display: grid">
+                        <img
+                            src="resources/images/highlights/coffee-home.avif"
+                            alt="petrichor coffee home page"
+                        />
+                        <figcaption>
+                            Petrichor Coffee - A fully functional eCommerce PERN
+                            application for a fictional coffee shop
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="resources/images/highlights/coffee-login.avif"
+                            alt="petrichor coffee login page"
+                        />
+                        <figcaption>
+                            Petrichor Coffee - Login page using bcrypt and JSON
+                            Web Tokens for a secure and easy to use system
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="resources/images/highlights/coffee-profile.avif"
+                            alt="petrichor coffee profile page"
+                        />
+                        <figcaption>
+                            Petrichor Coffee - Profile page where payments,
+                            addresses, orders, and user details can be viewed
+                            and edited
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="resources/images/highlights/coffee-admin.avif"
+                            alt="petrichor coffee admin page"
+                        />
+                        <figcaption>
+                            Petrichor Coffee - Admin page only capable of being
+                            viewed by users with admin rights. allows access to
+                            edit products, categories, and even delete users
+                        </figcaption>
+                    </figure>
+                    <p class="link">
+                        Source code for all projects can be found on
+                        <a
+                            href="https://github.com/IsaiahPetrichor"
+                            rel="noopener"
+                            target="_blank"
+                            >my GitHub</a
+                        >
+                    </p>
+                </div>
+            </section>
+            <section class="react">
+                <h2 class="section-title">
+                    React Projects<i class="bx bxs-chevron-right"></i>
+                </h2>
+                <div class="content">
+                    <div>
+                        <h3>Petrichor Coffee Professionals</h3>
+                        <figure class="flex">
+                            <img
+                                src="resources/images/highlights/coffee-home.avif"
+                                alt="petrichor coffee home page"
+                            />
+                        </figure>
+                        <p>
+                            Petrichor Coffee - A fully functional eCommerce PERN
+                            application for a fictional coffee shop, a fast SPA
+                            built with React Router and a custom back-end.
+                        </p>
+                        <p class="link">
+                            <a
+                                href="https://petrichor-coffee.herokuapp.com/"
+                                rel="noopener"
+                                target="_blank"
+                                >View live on Heroku</a
+                            >
+                        </p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h3>Employee Scheduler</h3>
+                        <figure class="flex">
+                            <img
+                                src="resources/images/projects/react/scheduler.avif"
+                                alt="Employee Scheduler react application"
+                            />
+                        </figure>
+                        <p>
+                            React CRUD application for managing employees and
+                            their schedules
+                        </p>
+                        <p class="link">
+                            <a
+                                href="https://petrichor-scheduler.netlify.app/"
+                                rel="noopener"
+                                target="_blank"
+                                >View live site on Netlify</a
+                            >
+                        </p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h3>Appointment Planner</h3>
+                        <figure class="flex">
+                            <img
+                                src="resources/images/projects/react/planner.avif"
+                                alt="appointment planner react application"
+                            />
+                        </figure>
+                        <p>
+                            React application for adding contacts and
+                            appointments
+                        </p>
+                        <p class="link">
+                            <a
+                                href="https://petrichor-planner.netlify.app/"
+                                rel="noopener"
+                                target="_blank"
+                                >View live site on Netlify</a
+                            >
+                        </p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h3>Flashcards</h3>
+                        <figure class="flex">
+                            <img
+                                src="resources/images/projects/react/flashcards.avif"
+                                alt="flashcards react application"
+                            />
+                        </figure>
+                        <p>
+                            React app to create topics and quizzes for existing
+                            topics
+                        </p>
+                        <p class="link">
+                            <a
+                                href="https://petrichor-flashcards.netlify.app/"
+                                rel="noopener"
+                                target="_blank"
+                                >View live site on Netlify</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="javascript">
+                <h2 class="section-title">
+                    JavaScript Projects<i class="bx bxs-chevron-right"></i>
+                </h2>
+                <div class="content">
+                    <div class="calc">
+                        <h3>Calculator</h3>
+                        <p id="output">0</p>
+                        <table class="buttons">
+                            <tr>
+                                <td colspan="2">
+                                    <button class="button" id="clearAll">
+                                        C
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="button" id="divide">
+                                        /
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="button" id="multiply">
+                                        *
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="button" id="in7">7</button>
+                                </td>
+                                <td>
+                                    <button class="button" id="in8">8</button>
+                                </td>
+                                <td>
+                                    <button class="button" id="in9">9</button>
+                                </td>
+                                <td>
+                                    <button class="button" id="subtract">
+                                        -
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="button" id="in4">4</button>
+                                </td>
+                                <td>
+                                    <button class="button" id="in5">5</button>
+                                </td>
+                                <td>
+                                    <button class="button" id="in6">6</button>
+                                </td>
+                                <td>
+                                    <button class="button" id="add">+</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="button" id="in1">1</button>
+                                </td>
+                                <td>
+                                    <button class="button" id="in2">2</button>
+                                </td>
+                                <td>
+                                    <button class="button" id="in3">3</button>
+                                </td>
+                                <td rowspan="2">
+                                    <button class="button" id="equals">
+                                        =
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button class="button" id="in0">0</button>
+                                </td>
+                                <td>
+                                    <button class="button" id="inDecimal">
+                                        .
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>Functional calculator using JavaScript.</p>
+                        <p class="link">
+                            <a
+                                href="https://github.com/IsaiahPetrichor/Portfolio/blob/main/resources/projects/JS/calculator.js"
+                                rel="noopener"
+                                target="_blank"
+                                >View code on Github</a
+                            >
+                        </p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h3>Quote API</h3>
+                        <figure class="flex">
+                            <img
+                                src="resources/images/projects/javascript/quote-api.avif"
+                                alt="quote API website"
+                            />
+                        </figure>
+                        <p>
+                            Simple API that serves up random quotes along with
+                            their authors.
+                        </p>
+                        <p class="link">
+                            <a
+                                href="https://github.com/IsaiahPetrichor/quoteApi"
+                                rel="noopener"
+                                target="_blank"
+                                >View code on Github</a
+                            >
+                        </p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h3>Find Your Hat</h3>
+                        <figure class="flex">
+                            <img
+                                src="resources/images/projects/javascript/find-hat.avif"
+                                alt="find your hat console game"
+                            />
+                        </figure>
+                        <p>
+                            Maze-like console game, your character must find
+                            their hat to win!
+                        </p>
+                        <p class="link">
+                            <a
+                                href="https://github.com/IsaiahPetrichor/find-your-hat"
+                                rel="noopener"
+                                target="_blank"
+                                >View code on Github</a
+                            >
+                        </p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h3>Mysterious Organism</h3>
+                        <figure class="flex">
+                            <img
+                                src="resources/images/projects/javascript/mysterious-organism.avif"
+                                alt="mysterious organism DNA analysis simulation"
+                            />
+                        </figure>
+                        <p>
+                            Javascript console app, creating a random DNA strand
+                            and returning an analysis
+                        </p>
+                        <p class="link">
+                            <a
+                                href="https://github.com/IsaiahPetrichor/mystery-organism"
+                                rel="noopener"
+                                target="_blank"
+                                >View code on Github</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="websites">
+                <h2 class="section-title">
+                    HTML & CSS Projects<i class="bx bxs-chevron-right"></i>
+                </h2>
+                <div class="content">
+                    <div>
+                        <h3>Autumn Procurement and Services LLC</h3>
+                        <figure class="flex">
+                            <img
+                                src="resources/images/projects/html/aarin.avif"
+                                alt="landing page for Autumn P&S LLC"
+                            />
+                        </figure>
+                        <p>
+                            Landing page I made for Autum Procurement and
+                            Services LLC
+                        </p>
+                        <p class="link">
+                            <a
+                                href="http://www.autumnpsllc.com/"
+                                rel="noopener"
+                                target="_blank"
+                                >View live site here</a
+                            >
+                        </p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h3>Fotomatic</h3>
+                        <figure class="flex">
+                            <img
+                                src="resources/images/projects/html/fotomatic.avif"
+                                alt="fotomatic landing page"
+                            />
+                        </figure>
+                        <p>Landing page for a fictional camera company</p>
+                        <p class="link">
+                            <a
+                                href="https://isaiahpetrichor.github.io/fotomatic/"
+                                rel="noopener"
+                                target="_blank"
+                                >View live on GitHub Pages</a
+                            >
+                        </p>
+                    </div>
+                    <hr />
+                    <div>
+                        <h3>Minecraft Server Website</h3>
+                        <figure class="flex">
+                            <img
+                                src="resources/images/projects/html/pixelmon.avif"
+                                alt="Pixelmon website home page"
+                            />
+                        </figure>
+                        <p>
+                            Website made for a clan of gamers that run a modded
+                            Minecraft server.
+                        </p>
+                        <p class="link">
+                            <a href="#">Code temporarily unavailable</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="resources/javascript/projects.js"></script>
+        <script src="resources/javascript/carousel.js"></script>
+        <script src="resources/javascript/calculator.js"></script>
+    </body>
 </html>
