@@ -4,9 +4,9 @@ Welcome to my Web Development portfolio. I am a Full-Stack Engineer, always stri
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+-   HTML
+-   CSS
+-   JavaScript
 
 ### View live deployment here: [https://isaiahpetrichor.github.io/portfolio/]
 
@@ -18,24 +18,24 @@ Running this project locally is simple. Clone the directory, open it in VSCode a
 
 ---
 
-- **React**
+-   **React**
 
-  - Employee Scheduler, CRUD app for scheduling and managing employees
-  - Appointment Planner, app for creating contacts and scheduling appointments
-  - Flashcards, app for creating topics and quizzes for existing topics
-  - Jammming, where you can add songs to a playlist and save it to your Spotify Account
+    -   Petrichor Coffee, e-commerce PERN app for consumer coffee distribution
+    -   Employee Scheduler, CRUD app for scheduling and managing employees using local storage in the browser
+    -   Flashcards, React app to create topics and quizzes for existing topics to showcase Redux state managment
+    -   Appointment Planner, app for creating contacts and scheduling appointments
 
-- **JavaScript**
+-   **JavaScript**
 
-  - JavaScript Calculator W/ GUI
-  - Quote API using Express, serves random quotes along with the author
-  - Find Your Hat, maze-like console game
-  - Mysterious Organism, console app that generates random DNA strands and analyzes them
+    -   Find Your Hat, maze-like console game
+    -   Mysterious Organism, console app that generates random DNA strands and analyzes them
+    -   JavaScript Calculator W/ GUI
+    -   Quote API using Express, serves random quotes along with the author
 
-- **HTML & CSS**
+-   **HTML & CSS**
 
-  - Autumn Procurement and Services LLC, landing page and services page for a recent client
-  - Fotomatic, landing page for a fictional camera company
-  - HTML & CSS page for a Minecraft server
+    -   Autumn Procurement and Services LLC, Web page Made on a one day timeline with no style guide as per client needs
+    -   Fotomatic, landing page for a fictional camera company following an exteral style guide
+    -   Prototype website made for a group of gamers that run a modded Minecraft server
 
 Check back often to see new / updated projects.
