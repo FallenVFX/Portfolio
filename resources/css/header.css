@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    text-align: center;
+    height: fit-content;
+    width: 37px;
+    margin: 0;
+    border-radius: 50%;
+    border: 3px ridge var(--gray2);
+}
+
+header a {
+    padding: 0px 12px;
+}
+
+header a:hover,
+header a:active {
+    color: var(--gray3);
+}

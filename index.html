@@ -6,7 +6,7 @@
         <meta name="author" content="Isaiah Leach" />
         <meta
             name="description"
-            content="Personal Portfolio page of Isaiah Leach/Petrichor, Full Stack Engineer"
+            content="Personal Portfolio page of Isaiah Leach-Petrichor, Full-Stack Engineer"
         />
         <meta
             name="keywords"
@@ -35,7 +35,27 @@
             type="image/x-icon"
             href="resources/images/personal/favicon.ico?v=2"
         />
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="resources/css/global.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="resources/css/header.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="resources/css/footer.css"
+        />
+        <link rel="stylesheet" type="text/css" href="resources/css/about.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="resources/css/skills.css"
+        />
         <link
             href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
             rel="stylesheet"
@@ -43,100 +63,95 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
             rel="stylesheet"
         />
         <title>Portfolio | Isaiah Leach-Petrichor</title>
     </head>
     <body class="flex">
         <header>
-            <h1>Isaiah Leach-Petrichor</h1>
+            <h1><a href="/">Isaiah Petrichor</a></h1>
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html" class="active"
-                            ><i class="bx bxs-home"></i><span>Home</span></a
+                        <a
+                            href="https://github.com/IsaiahPetrichor"
+                            rel="noopener"
+                            target="_blank"
+                            class="icon"
+                            ><box-icon
+                                name="github"
+                                type="logo"
+                                size="md"
+                                color="white"
+                                animation="spin-hover"
+                            ></box-icon>
+                            <div class="hide">GitHub</div></a
                         >
                     </li>
                     <li>
-                        <a href="projects.html"
-                            ><i class="bx bxs-folder"></i
-                            ><span>Projects</span></a
+                        <a
+                            href="https://www.linkedin.com/in/isaiah-petrichor"
+                            rel="noopener"
+                            target="_blank"
+                            class="icon"
+                            ><box-icon
+                                type="logo"
+                                name="linkedin-square"
+                                size="md"
+                                color="white"
+                                animation="spin-hover"
+                            ></box-icon>
+                            <div class="hide">LinkedIn</div></a
                         >
                     </li>
                     <li>
-                        <a href="certifications.html"
-                            ><i class="bx bxs-book-bookmark"></i
-                            ><span>Certifications</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#contact"
-                            ><i class="bx bxs-contact"></i
-                            ><span>Contact</span></a
-                        >
+                        <a
+                            href="resources/resume/resume.pdf"
+                            rel="noopener"
+                            target="_blank"
+                            class="icon"
+                            ><box-icon
+                                type="solid"
+                                name="file-pdf"
+                                size="md"
+                                color="white"
+                                animation="spin-hover"
+                            ></box-icon>
+                            <div class="hide">Resume</div>
+                        </a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <div class="links">
-            <a
-                href="https://github.com/IsaiahPetrichor"
-                rel="noopener"
-                target="_blank"
-                ><i class="bx bxl-github"></i> GitHub</a
-            >
-            <a href="resources/resume/resume.pdf" rel="noopener" target="_blank"
-                ><i class="bx bx-file"></i> Resume</a
-            >
-            <a
-                href="https://www.linkedin.com/in/isaiah-petrichor"
-                rel="noopener"
-                target="_blank"
-                ><i class="bx bxl-linkedin"></i> LinkedIn</a
-            >
-        </div>
         <main>
-            <div class="hero">
-                <div>
-                    <h2>Full Stack Developer</h2>
-                    <p>
-                        Welcome to my Portfolio! <br />
-                        Scroll down to learn more about me, or click here to see
-                        my projects:
-                    </p>
-                    <a href="./projects.html"
-                        >Projects
-                        <i class="bx bx-right-arrow-alt bx-flashing"></i
-                    ></a>
-                </div>
-            </div>
-            <hr />
             <section class="about">
-                <h2>About Me</h2>
-                <p>
-                    My name is Isaiah, I'm 22 years old and I live in Edmonds,
-                    Washington.
-                    <br /><br />
-                    I'm a proven Fullstack Software Engineer with a
-                    specialization in Javascript, React, Unit Testing, and
-                    Responsive Design. To demonstrate my ability to create,
-                    maintain, and improve responsive, dynamic, and accessible
-                    websites, I designed and developed my own react web
-                    application that interacts with the backend and database to
-                    provide a clean and easy-to-use consumer coffee distribution
-                    website. As a dedicated lifelong learner, I attended a 500+
-                    hour coding Bootcamp where I learned industry best practices
-                    and design architecture using HTML5, CSS3, JavaScript,
-                    Node.JS, Express, React, Redux, SQL, and Postgres. I am now
-                    eager to join a supportive, collaborative, and communicative
-                    team where I can continue to contribute meaningfully and
-                    grow.
-                </p>
+                <div>
+                    <h2>
+                        Welcome to my portfolio!<br />
+                        I'm Isaiah Leach-Petrichor.
+                    </h2>
+                    <p>
+                        I'm a Full Stack Software Developer, living in Edmonds,
+                        Washington! I attended a 500+ hour coding Bootcamp where
+                        I learned industry best practices and design
+                        architecture using HTML5, CSS3, JavaScript, Node.JS,
+                        Express, React, Redux, SQL, PostgreSQL and many others.
+                        I currently volunteer at
+                        <a
+                            class="inline"
+                            href="https://www.clearviction.org/"
+                            rel="noopener"
+                            target="_blank"
+                            >Clearviction</a
+                        >
+                        as a Software Developer. I am eager to join a
+                        supportive, collaborative, and communicative team where
+                        I can continue to contribute meaningfully and grow my
+                        skillset!
+                    </p>
+                    <a class="contact" href="/#contact">Contact Me</a>
+                </div>
                 <img
                     class="profile"
                     src="resources/images/personal/IsaiahAlt.avif"
@@ -148,7 +163,7 @@
                         src=""
                         alt="Seattle Area Map with a Marker on Edmonds, Washington"
                     />
-                    <cite>Map Showing Edmonds, Washington</cite>
+                    <cite>Edmonds, Washington</cite>
                 </map>
             </section>
             <section class="skills">
@@ -209,10 +224,47 @@
                 </ul>
             </section>
         </main>
-        <footer id="contact">
-            <h3>Contact Me</h3>
-            <p>Email: petrichorwebdev@gmail.com</p>
+        <footer>
+            <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                id="contact"
+            >
+                <input
+                    type="hidden"
+                    name="apikey"
+                    value="b7351c17-96fe-46bc-b357-8a23ceb9fca6"
+                />
+                <input
+                    type="hidden"
+                    name="subject"
+                    value="New Message from Portfolio"
+                />
+                <input
+                    type="hidden"
+                    name="from_name"
+                    value="Portfolio Notifications"
+                />
+
+                <input type="text" name="name" required />
+                <input type="email" name="email" required />
+                <textarea name="message" required></textarea>
+
+                <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://web3forms.com/success"
+                />
+
+                <button type="submit">Submit Form</button>
+            </form>
+            <p>petrichorwebdev@gmail.com</p>
+            <p>Copyright Isaiah Leach-Petrichor 2022-2023</p>
         </footer>
+        <script
+            defer
+            src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
+        ></script>
         <script defer src="resources/javascript/mapQuest.js"></script>
     </body>
 </html>

@@ -1,0 +1,28 @@
+:root {
+    --main: #040405;
+    --gray0: #383c42;
+    --gray1: #555a60;
+    --gray2: #768089;
+    --gray3: #a1a8af;
+    --gray4: #f1f5f7;
+    --accent: #421911;
+}
+
+body {
+    background-color: var(--main);
+    color: var(--gray3);
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+a {
+    color: var(--gray3);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+a:active {
+    color: var(--accent);
+}
