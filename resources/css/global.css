@@ -1,28 +1,56 @@
 :root {
-    --main: #040405;
-    --gray0: #383c42;
-    --gray1: #555a60;
-    --gray2: #768089;
-    --gray3: #a1a8af;
-    --gray4: #f1f5f7;
-    --accent: #421911;
+    --main: hsl(218, 28%, 13%);
+    --intro-back: hsl(217, 28%, 15%);
+    --footer: hsl(216, 53%, 9%);
+    --contain-back: hsl(219, 30%, 18%);
+    --lt-accent: hsl(176, 68%, 64%);
+    --dk-accent: hsl(198, 60%, 50%);
+    --error: hsl(0, 100%, 63%);
+    --neutral: hsl(0, 0%, 100%);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: var(--main);
-    color: var(--gray3);
-    font-family: 'Roboto', Helvetica, sans-serif;
+    color: var(--neutral);
+    font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 a {
-    color: var(--gray3);
+    color: var(--neutral);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--accent);
+    color: var(--dk-accent);
 }
 
 a:active {
-    color: var(--accent);
+    color: var(--dk-accent);
+}
+
+a.icon {
+    padding: 25px 10px 10px 10px;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    font-size: 14px;
+    background-color: var(--contain-back);
+    border-radius: 5px;
+    padding: 2px;
+    transition: visibility 0s, opacity 1s linear;
+}
+
+a:hover > div.hide {
+    visibility: visible;
+    opacity: 1;
+    color: var(--neutral);
 }

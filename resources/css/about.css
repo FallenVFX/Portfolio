@@ -1,0 +1,28 @@
+.about {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about div {
+    padding: 20px;
+    width: 60%;
+}
+
+.about .profile {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 40px;
+    filter: grayscale(40%) brightness(60%);
+    z-index: -1;
+    max-width: 400px;
+}
+
+a.inline {
+    color: var(--lt-accent);
+}
+
+a.inline:hover {
+    color: var(--dk-accent);
+}
