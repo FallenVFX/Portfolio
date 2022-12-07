@@ -1,3 +1,13 @@
 footer {
     background-color: var(--footer);
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 15px;
+}
+
+.footer-content {
+    max-width: 1600px;
+    margin: 0 auto;
 }

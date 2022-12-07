@@ -9,16 +9,40 @@
     --neutral: hsl(0, 0%, 100%);
 }
 
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    height: 100%;
+    background-color: var(--main);
+    color: var(--neutral);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+main {
+    min-height: fit-content;
+}
+
 h1,
 h2,
 h3 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: var(--main);
-    color: var(--neutral);
-    font-family: 'Open Sans', Helvetica, sans-serif;
+hr {
+    max-width: 96%;
+    margin: 0 auto;
 }
 
 a {

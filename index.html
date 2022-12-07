@@ -154,7 +154,7 @@
                 </div>
                 <img
                     class="profile"
-                    src="resources/images/personal/IsaiahAlt.avif"
+                    src="resources/images/personal/IsaiahSide.jpg"
                     alt="Side profile picture of Isaiah"
                 />
                 <map>
@@ -166,6 +166,7 @@
                     <cite>Edmonds, Washington</cite>
                 </map>
             </section>
+            <hr />
             <section class="skills">
                 <h2>My Growing Skillset</h2>
                 <ul>
@@ -223,44 +224,115 @@
                     <li><i class="bx bxs-keyboard"></i>Unit Testing</li>
                 </ul>
             </section>
+            <footer>
+                <div class="footer-content">
+                    <div id="contact">
+                        <h3>Contact</h3>
+                        <form
+                            action="https://api.web3forms.com/submit"
+                            method="POST"
+                        >
+                            <input
+                                type="hidden"
+                                name="apikey"
+                                value="b7351c17-96fe-46bc-b357-8a23ceb9fca6"
+                            />
+                            <input
+                                type="hidden"
+                                name="subject"
+                                value="New Message from Portfolio"
+                            />
+                            <input
+                                type="hidden"
+                                name="from_name"
+                                value="Portfolio Notifications"
+                            />
+
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Name"
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                required
+                            />
+                            <textarea
+                                name="message"
+                                placeholder="Message..."
+                                required
+                            ></textarea>
+
+                            <input
+                                type="hidden"
+                                name="redirect"
+                                value="https://web3forms.com/success"
+                            />
+
+                            <button type="submit">Submit Form</button>
+                        </form>
+                    </div>
+                    <hr />
+                    <p>petrichorwebdev@gmail.com</p>
+                    <p>Copyright Isaiah Leach-Petrichor 2022-2023</p>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://github.com/IsaiahPetrichor"
+                                    rel="noopener"
+                                    target="_blank"
+                                    class="icon"
+                                    ><box-icon
+                                        name="github"
+                                        type="logo"
+                                        size="md"
+                                        color="white"
+                                        animation="spin-hover"
+                                    ></box-icon>
+                                    <div class="hide">GitHub</div></a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/isaiah-petrichor"
+                                    rel="noopener"
+                                    target="_blank"
+                                    class="icon"
+                                    ><box-icon
+                                        type="logo"
+                                        name="linkedin-square"
+                                        size="md"
+                                        color="white"
+                                        animation="spin-hover"
+                                    ></box-icon>
+                                    <div class="hide">LinkedIn</div></a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="resources/resume/resume.pdf"
+                                    rel="noopener"
+                                    target="_blank"
+                                    class="icon"
+                                    ><box-icon
+                                        type="solid"
+                                        name="file-pdf"
+                                        size="md"
+                                        color="white"
+                                        animation="spin-hover"
+                                    ></box-icon>
+                                    <div class="hide">Resume</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
         </main>
-        <footer>
-            <form
-                action="https://api.web3forms.com/submit"
-                method="POST"
-                id="contact"
-            >
-                <input
-                    type="hidden"
-                    name="apikey"
-                    value="b7351c17-96fe-46bc-b357-8a23ceb9fca6"
-                />
-                <input
-                    type="hidden"
-                    name="subject"
-                    value="New Message from Portfolio"
-                />
-                <input
-                    type="hidden"
-                    name="from_name"
-                    value="Portfolio Notifications"
-                />
-
-                <input type="text" name="name" required />
-                <input type="email" name="email" required />
-                <textarea name="message" required></textarea>
-
-                <input
-                    type="hidden"
-                    name="redirect"
-                    value="https://web3forms.com/success"
-                />
-
-                <button type="submit">Submit Form</button>
-            </form>
-            <p>petrichorwebdev@gmail.com</p>
-            <p>Copyright Isaiah Leach-Petrichor 2022-2023</p>
-        </footer>
         <script
             defer
             src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
