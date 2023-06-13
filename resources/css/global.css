@@ -5,8 +5,10 @@
     --contain-back: hsl(219, 30%, 18%);
     --lt-accent: hsl(176, 68%, 64%);
     --dk-accent: hsl(198, 60%, 50%);
+    --border: hsl(216, 30%, 60%);
     --error: hsl(0, 100%, 63%);
     --neutral: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 85%);
 }
 
 * {
@@ -40,9 +42,13 @@ h3 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
+h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
 hr {
-    max-width: 96%;
-    margin: 0 auto;
+    margin: 0 24px;
 }
 
 a {

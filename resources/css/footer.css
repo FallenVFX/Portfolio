@@ -4,10 +4,66 @@ footer {
     left: 0;
     width: 100vw;
     margin: 0;
-    padding: 15px;
+    padding: 10px 24px;
 }
 
 .footer-content {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+.footer-content p,
+.footer-content form {
+    margin-left: 24px;
+}
+
+.footer-content form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-content form input,
+.footer-content form textarea {
+    width: 30%;
+    margin-right: 70%;
+    margin-bottom: 5px;
+    padding: 6px;
+    background-color: var(--contain-back);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--neutral);
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.footer-content form textarea {
+    height: 60px;
+}
+
+.footer-content form input::placeholder,
+.footer-content form textarea::placeholder {
+    color: var(--neutral-grey);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px var(--contain-back) inset;
+    -webkit-text-fill-color: var(--neutral);
+}
+
+.footer-content form button {
+    background-color: var(--contain-back);
+    color: var(--neutral);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 4px 10px;
+    margin: 2px 5% 10px 5%;
+    width: 20%;
+    font-weight: 600;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
