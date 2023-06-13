@@ -1,0 +1,86 @@
+:root {
+    --main: hsl(218, 28%, 13%);
+    --intro-back: hsl(217, 28%, 15%);
+    --footer: hsl(216, 53%, 9%);
+    --contain-back: hsl(219, 30%, 18%);
+    --lt-accent: hsl(176, 68%, 64%);
+    --dk-accent: hsl(198, 60%, 50%);
+    --border: hsl(216, 30%, 60%);
+    --error: hsl(0, 100%, 63%);
+    --neutral: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 85%);
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    height: 100%;
+    background-color: var(--main);
+    color: var(--neutral);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+main {
+    min-height: fit-content;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+hr {
+    margin: 0 24px;
+}
+
+a {
+    color: var(--neutral);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dk-accent);
+}
+
+a:active {
+    color: var(--dk-accent);
+}
+
+a.icon {
+    padding: 25px 10px 10px 10px;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    font-size: 14px;
+    background-color: var(--contain-back);
+    border-radius: 5px;
+    padding: 2px;
+    transition: visibility 0s, opacity 1s linear;
+}
+
+a:hover > div.hide {
+    visibility: visible;
+    opacity: 1;
+    color: var(--neutral);
+}

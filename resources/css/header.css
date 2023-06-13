@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    margin: 0 auto;
+}
+
+header h1 {
+    text-align: left;
+}
+
+h1 a:hover,
+h1 a:active {
+    color: var(--neutral);
+}
+
+nav {
+    max-width: 600px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    list-style: none;
+}
