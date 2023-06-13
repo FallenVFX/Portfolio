@@ -14,10 +14,6 @@ Welcome to my Development Portfolio. I am a Software Development Engineer, alway
 
 Running this project locally is simple. Clone the directory, open it in VSCode and launch it using the Live Server extension.
 
-## TODO
-
--   Update Responsive Styles
-
 ## Projects Featured
 
 ---
