@@ -13,9 +13,7 @@
     height: 510px;
     margin: 0 auto;
     margin-bottom: 14px;
-    /* padding: 8px; */
     border-radius: 5px;
-    /* box-shadow: 0px 2px 5px var(--footer); */
 }
 
 .project figure {
@@ -45,15 +43,89 @@
     width: 100%;
     margin: 4px auto 12px auto;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .project .links a {
     font-size: 1.2rem;
     border-bottom: 1px solid var(--lt-accent);
-    padding: 5px;
+    padding: 5px 0px;
+    margin-right: 20px;
 }
 
 .project .links a:hover {
     color: var(--lt-accent);
+}
+
+/* Calculator Styles */
+
+.calc {
+    height: 370px;
+    width: fit-content;
+    box-shadow: 0px 0px 10px #111;
+    background: linear-gradient(90deg, rgb(36, 44, 76) 10%, rgb(19, 54, 63) 50%, rgb(20, 47, 57) 90%);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#output {
+    background-color: #444;
+    box-shadow: inset 0px 0px 5px #222;
+    border-radius: 5px;
+    padding: 12px 5px;
+}
+
+.buttons button {
+    background-color: #444;
+    border-radius: 5px;
+    border: 1px solid var(--neutral-grey);
+    color: var(--neutral-grey);
+    width: 50px;
+    height: 50px;
+}
+
+#clearAll,
+#in0 {
+    width: 104px;
+}
+
+#equals {
+    height: 104px;
+}
+
+@media only screen and (max-width: 767px) {
+    .project {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 42px;
+    }
+
+    .calc {
+        height: auto;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .calc p {
+        margin: 10px auto;
+    }
+
+    #output {
+        padding: 32px 10px;
+        font-size: 2rem;
+    }
+
+    .buttons button {
+        width: 18vw;
+        height: 18vw;
+        font-size: 1.6rem;
+    }
+
+    #clearAll,
+    #in0 {
+        width: calc(36vw + 4px);
+    }
+
+    #equals {
+        height: calc(36vw + 4px);
+    }
 }
